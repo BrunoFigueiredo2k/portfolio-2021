@@ -1,0 +1,67 @@
+/**
+ * Typography
+ * =================================
+ * - Base
+ * - Paragraphs
+ * - Headings
+ * - Type sizes
+ * - Misc
+ * - Utilities
+ *
+ * Body font size, leadings etc have been set in _variables.scss
+ */
+
+/**
+ * Headings
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    text-rendering: optimizelegibility; // Fix the character spacing for headings
+    margin-top: 0;
+
+    small {
+        font-weight: normal;
+    }
+}
+
+.landing-title,
+.title-section {
+    font-size: 80px;
+    color: $black;
+    font-weight: $weight-normal;
+    margin-bottom: $margin-typography;
+    text-shadow: 2px 0 5px #3a057048;
+
+    span {
+        color: $purple;
+    }
+}
+
+.landing-description {
+    font-size: 22px;
+}
+
+.title-section {
+    font-size: 45px;
+
+    &:after {
+        content: "";
+        display: block;
+        border-bottom: 5px solid $light-purple;
+        width: 125px;
+        position: relative;
+        bottom: -10px;
+    }
+}
+
+p {
+    margin-bottom: $margin-typography;
+    color: $grey;
+    line-height: 1.6em;
+    font-size: $base-font-size;
+}

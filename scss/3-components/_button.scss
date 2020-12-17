@@ -1,0 +1,27 @@
+/* Place all button components styling here */
+.cta-btn,
+.cta-btn-uppercase {
+    background: linear-gradient(90deg, $dark-purple 0%, $purple 100%);
+    color: white !important;
+    font-weight: $weight-bold;
+    font-size: #{$base-font-size - 2px};
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: $box-shadow-purple;
+    transition: .5s ease;
+    display: inline-block;
+
+    &:hover {
+        transform: scale(1.03);
+        box-shadow: $box-shadow-purple-hover;
+        cursor: pointer;
+    }
+}
+
+.cta-btn-uppercase {
+    text-transform: uppercase;
+    padding: 12px 55px;
+    letter-spacing: 1px;
+    font-size: 15px;
+}

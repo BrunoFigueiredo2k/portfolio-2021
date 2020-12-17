@@ -1,0 +1,30 @@
+.row {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    .col {
+        flex: 50%;
+        position: relative;
+    }
+
+    .col-4 {
+        flex: 33%;
+    }
+
+    .col-3 {
+        flex: 25%;
+    }
+
+    .col-8 {
+        flex: 66%;
+    }
+}
+
+.center {
+    text-align: center;
+}

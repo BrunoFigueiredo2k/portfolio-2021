@@ -1,0 +1,18 @@
+#illustration-landing {
+    height: 500px;
+    float: right;
+}
+
+#blob-bg {
+    @include backgroundImageCover('/images/blob.svg');
+}
+
+#self-img {
+    height: 200px;
+    border-radius: 50%;
+}
+
+#contact-illustration {
+    height: 400px;
+    float: left;
+}
