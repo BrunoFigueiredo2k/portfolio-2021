@@ -10,6 +10,7 @@ section {
 
 #landing-section {
     padding: 0 0 60px 0;
+    height: 100vh;
     @include backgroundImageCover('/images/bg-boost-desktop.svg');
     background-blend-mode: lighten;
 

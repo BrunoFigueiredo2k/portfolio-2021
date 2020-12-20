@@ -190,6 +190,7 @@ h6 small {
 
 .landing-description {
   font-size: 22px;
+  font-weight: 500;
 }
 
 .title-section {
@@ -329,6 +330,14 @@ textarea:focus {
   color: #35323E;
 }
 
+.skills-li {
+  font-size: 30px;
+}
+
+.skills-li li {
+  margin: 10px 15px 10px 0;
+}
+
 #illustration-landing {
   height: 500px;
   float: right;
@@ -408,6 +417,100 @@ textarea:focus {
   text-align: left;
 }
 
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  -webkit-transition: .5s smooth !important;
+  transition: .5s smooth !important;
+}
+
+.tab button {
+  background-color: transparent;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 40px 14px 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.tab button:hover {
+  color: #760ADF;
+}
+
+.active {
+  color: #ab5ef6;
+  background-color: transparent;
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+}
+
+.active:after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid #ab5ef6;
+  width: 30px;
+  position: relative;
+  bottom: -5px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 0;
+  border-top: none;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  font-size: 14px;
+  visibility: hidden;
+  font-weight: 500;
+  width: 120px;
+  background-color: #35323E;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 20px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #35323E transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext {
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+  opacity: 0;
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+}
+
 /* Import all layouts .scss files */
 /* Header component */
 header {
@@ -475,6 +578,7 @@ section {
 
 #landing-section {
   padding: 0 0 60px 0;
+  height: 100vh;
   background: url("/images/bg-boost-desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;

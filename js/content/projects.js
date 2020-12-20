@@ -1,7 +1,7 @@
 const CLASS_RIGHT_CONTENT = 'right-content';
 const CLASS_LEFT_CONTENT = 'left-content';
 
-// Object of all projects
+// Projects data
 const projects = [
     {
         id: Math.floor(Math.random() * Date.now()),
@@ -65,6 +65,7 @@ const displayProjectsDOM = () => {
                 </div>
             `;
 
+            // Determine direction of content (lef or right) based on class of element
             if (element.directionContent == CLASS_RIGHT_CONTENT){
                 container.innerHTML += `
                     <div class="row project">

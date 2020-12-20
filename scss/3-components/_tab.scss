@@ -1,0 +1,43 @@
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    transition: .5s smooth !important;
+
+    button {
+        background-color: transparent;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 40px 14px 0;
+        transition: 0.3s;
+        font-size: 18px;
+        font-weight: $weight-bold;
+
+        &:hover {
+            color: $purple;
+        }
+    }
+}
+
+.active {
+    color: $light-purple;
+    background-color: transparent;
+    transition: $transition-ease;
+
+    &:after {
+        content: "";
+        display: block;
+        border-bottom: 4px solid $light-purple;
+        width: 30px;
+        position: relative;
+        bottom: -5px;
+    }
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 0;
+    border-top: none;
+}

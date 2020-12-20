@@ -11,7 +11,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- My scripts -->
-    <script type="module" src="/js/scripts/index.js" defer></script>
+    <script type="module" src="/js/imports.js" defer></script>
     <link rel="stylesheet" href="../scss/main.css">
     <title>Bruno Figueiredo | Front-end Developer | Portfolio</title>
 </head>
@@ -47,11 +47,33 @@
                         industry's standard dummy.Lorem Ipsum is simply
                         dummy text of the printing and
                         typesetting industry.</p>
-                    <ul class="horizontal-li" id="skills-li">
-                        <li>Skills</li>
-                        <li>Education</li>
-                        <li>Hobbies</li>
-                    </ul>
+
+                    <div class="tab">
+                        <button class="tablinks active" onclick="clickTab(event, 'skills' )">Skills</button>
+                        <button class="tablinks" onclick="clickTab(event, 'education')">Education</button>
+                        <button class="tablinks" onclick="clickTab(event, 'hobbies')">Hobbies</button>
+                    </div>
+
+                    <div id="skills" class="tabcontent" style="display: block;">
+                        <ul class="horizontal-list skills-li" id="skills-li">
+
+                        </ul>
+                    </div>
+
+                    <div id="education" class="tabcontent">
+                        <h3>Education</h3>
+                        <p>Paris is the capital of France.</p>
+                    </div>
+
+                    <div id="hobbies" class="tabcontent">
+                        <ul class="vertical-list" style="font-weight: 500;">
+                            <li>⚽ - watching football</li>
+                            <li>🍿 - watching movies & series</li>
+                            <li>🏃‍♂️ - running</li>
+                            <li>🧑‍💻 - coding</li>
+                            <li>🏸 - badminton</li>
+                        </ul>
+                    </div>
                     <div id="content-about">
 
                     </div>
@@ -67,33 +89,6 @@
             <div id="projects-container">
 
             </div>
-            <!-- <div class="row project">
-                <div class="col">
-                    <a href="#"><img src="/images/projects/easybank-landing-page.jpg" alt="easybank-landing-page"
-                            class="project-img"></a>
-                </div>
-                <div class="col project-content right-content">
-                    <h3 class="project-title">Easybank landing page</h3>
-                    <div class="project-card">
-                        <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
-                            rem
-                            tenetur placeat sed
-                            consectetur, qui distinctio enim veritatis in quia dolor accusantium quas provident
-                            dignissimos repudiandae facilis assumenda earum eligendi.</p>
-                    </div>
-                    <ul class="horizontal-list project-tech">
-                        <li>Javascript</li>
-                        <li>HTML</li>
-                        <li>SCSS</li>
-                    </ul>
-                    <ul class="horizontal-list project-links">
-                        <li><a href="https://easybank-landing-page.brunofigueiredo2k.vercel.app/" target="_blank"
-                                rel="noreferrer"><i class="fab fa-github"></i></a></li>
-                        <li><a href="https://easybank-landing-page.brunofigueiredo2k.vercel.app/" target="_blank"
-                                rel="noreferrer"><i class="fas fa-external-link-alt"></i></a></li>
-                    </ul>
-                </div>
-            </div> -->
 
             <button class="cta-btn-uppercase">View all</button>
         </div>
@@ -157,6 +152,25 @@
     </section>
 
 </body>
+
+<script>
+    function clickTab(evt, name) {
+        let i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(name).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
 
 <script>
     AOS.init();
