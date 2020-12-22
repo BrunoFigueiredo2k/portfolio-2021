@@ -1,5 +1,5 @@
 section {
-    padding: 60px 0;
+    padding: 100px 0;
 }
 
 #landing-section,
@@ -10,9 +10,10 @@ section {
 
 #landing-section {
     padding: 0 0 60px 0;
-    height: 100vh;
+    min-height: 100vh;
     @include backgroundImageCover('/images/bg-boost-desktop.svg');
     background-blend-mode: lighten;
+    background-position: center;
 
     #col-left {
         display: table-cell;

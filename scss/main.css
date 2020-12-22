@@ -343,15 +343,11 @@ textarea:focus {
   float: right;
 }
 
-#blob-bg {
-  background: url("/images/blob.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 60%;
-}
-
 #self-img {
-  height: 200px;
+  height: 300px;
+  border: 10px double #35323E;
+  -webkit-box-shadow: 0 0 10px 5px #aa5ef610;
+          box-shadow: 0 0 10px 5px #aa5ef610;
   border-radius: 50%;
 }
 
@@ -511,6 +507,82 @@ textarea:focus {
   opacity: 1;
 }
 
+.timeline {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 9px;
+  margin-left: -1px;
+  width: 3px;
+  height: 100%;
+  background: #848486;
+  z-index: 1;
+}
+
+.timeline-block {
+  width: calc(80% + 8px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  clear: both;
+}
+
+.timeline .marker {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #FCFCFC;
+  background: #ab5ef6;
+  margin-top: 10px;
+  z-index: 9999;
+}
+
+.timeline-content {
+  width: 95%;
+  padding: 0 15px;
+}
+
+.timeline-content h3 {
+  margin: 10px 0;
+  font-weight: 600;
+  font-size: 20px;
+  color: #35323E;
+}
+
+.timeline-content span {
+  font-size: 14px;
+  color: #a4a4a4;
+  line-height: 1.6em;
+}
+
+.timeline-content p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5em;
+  word-spacing: 1px;
+  color: #848486;
+}
+
+@media screen and (max-width: 768px) {
+  .container:before {
+    left: 8px;
+    width: 2px;
+  }
+  .timeline-block {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
 /* Import all layouts .scss files */
 /* Header component */
 header {
@@ -562,12 +634,12 @@ header {
           flex: 66%;
 }
 
-.center {
+.text-center {
   text-align: center;
 }
 
 section {
-  padding: 60px 0;
+  padding: 100px 0;
 }
 
 #landing-section,
@@ -578,12 +650,13 @@ section {
 
 #landing-section {
   padding: 0 0 60px 0;
-  height: 100vh;
+  min-height: 100vh;
   background: url("/images/bg-boost-desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 60%;
   background-blend-mode: lighten;
+  background-position: center;
 }
 
 #landing-section #col-left {

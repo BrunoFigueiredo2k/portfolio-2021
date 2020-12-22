@@ -3,12 +3,10 @@
     float: right;
 }
 
-#blob-bg {
-    @include backgroundImageCover('/images/blob.svg');
-}
-
 #self-img {
-    height: 200px;
+    height: 300px;
+    border: 10px double $black;
+    box-shadow: $box-shadow-light;
     border-radius: 50%;
 }
 
