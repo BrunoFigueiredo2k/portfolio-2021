@@ -29,7 +29,7 @@
                 <div class="col" id="col-left">
                     <h1 class="landing-title">Hey, I'm <span>Bruno</span> 👋</h1>
                     <p class="landing-description">I'm a young front-end developer and ICT student at the Hogeschool van
-                        Amsterdam. As a developer I take on several different project creating mostly web applications.
+                        Amsterdam. As a developer I take on several different projects creating mostly web applications.
                     </p>
                     <button class="cta-btn">Get in contact</button>
                 </div>
@@ -59,10 +59,13 @@
                         <button class="tablinks" onclick="clickTab(event, 'hobbies')">Hobbies</button>
                     </div>
 
-                    <div id="skills" class="tabcontent" style="display: block;">
-                        <ul class="horizontal-list skills-li" id="skills-li">
-
-                        </ul>
+                    <div id="skills" class="tabcontent skills-tab" style="display: block;">
+                        <p>Front-end</p>
+                        <ul class="horizontal-list skills-li" id="skills-li-frontend"></ul>
+                        <p>Back-end</p>
+                        <ul class="horizontal-list skills-li" id="skills-li-backend"></ul>
+                        <p>Other</p>
+                        <ul class="horizontal-list skills-li" id="skills-li-other"></ul>
                     </div>
 
                     <div id="education" class="tabcontent">
@@ -90,11 +93,7 @@
     <section id="projects">
         <div class="container">
             <h2 class="title-section">Featured projects</h2>
-            <!-- TODO: Add projects via js here -->
-            <div id="projects-container">
-
-            </div>
-
+            <div id="projects-container"></div>
             <button class="cta-btn-uppercase">View all</button>
         </div>
     </section>

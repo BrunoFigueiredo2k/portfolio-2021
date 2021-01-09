@@ -252,6 +252,7 @@ p {
   font-size: 16px;
   padding: 12px 25px;
   border-radius: 5px;
+  font-size: 17px;
   border: 3px solid white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -388,7 +389,7 @@ textarea:focus {
 }
 
 .project-img {
-  max-height: 300px;
+  max-height: 350px;
   -webkit-box-shadow: 0 0 10px 5px #aa5ef610;
           box-shadow: 0 0 10px 5px #aa5ef610;
   border-radius: 10px;
@@ -402,8 +403,8 @@ textarea:focus {
 
 .project-card {
   background-color: white;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 30px 20px;
+  border-radius: 5px;
   -webkit-box-shadow: 0 0 10px 5px #aa5ef610;
           box-shadow: 0 0 10px 5px #aa5ef610;
   margin-bottom: 30px;
@@ -430,6 +431,8 @@ textarea:focus {
 
 .right-content {
   text-align: right;
+  z-index: 99999;
+  margin-left: -100px;
 }
 
 .right-content .horizontal-list li {
@@ -438,6 +441,8 @@ textarea:focus {
 
 .left-content {
   text-align: left;
+  z-index: 99999;
+  margin-right: -100px;
 }
 
 /* Style the tab */
@@ -485,6 +490,13 @@ textarea:focus {
   display: none;
   padding: 6px 0;
   border-top: none;
+}
+
+.skills-tab p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  color: black;
+  font-weight: 600;
 }
 
 .tooltip {
@@ -611,7 +623,7 @@ textarea:focus {
 }
 
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 16px;
 }
 
 /* Track */
@@ -622,8 +634,8 @@ textarea:focus {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: -webkit-gradient(linear, left top, right top, from(#3B0570), color-stop(200%, #760ADF));
-  background: linear-gradient(90deg, #3B0570 0%, #760ADF 200%);
+  background: -webkit-gradient(linear, left top, right top, from(#760ADF), color-stop(150%, #ab5ef6));
+  background: linear-gradient(90deg, #760ADF 0%, #ab5ef6 150%);
   border-radius: 10px;
 }
 

@@ -1,33 +1,53 @@
 let skillsData = [
     {
-        icon: '<i class="fab fa-html5"></i>',
-        tooltipText: 'HTML'
+        frontend: [
+            {
+                icon: '<i class="fab fa-html5"></i>',
+                tooltipText: 'HTML'
+            },
+            {
+                icon: '<i class="fab fa-css3-alt"></i>',
+                tooltipText: 'CSS'
+            },
+            {
+                icon: '<i class="fab fa-sass"></i>',
+                tooltipText: 'SCSS'
+            },
+            {
+                icon: '<i class="fab fa-js-square"></i>',
+                tooltipText: 'JavaScript'
+            },
+            {
+                icon: '<i class="fab fa-react"></i>',
+                tooltipText: 'React'
+            }
+        ]
     },
     {
-        icon: '<i class="fab fa-css3-alt"></i>',
-        tooltipText: 'CSS'
+        backend: [
+            {
+                icon: '<i class="fab fa-php"></i>',
+                tooltipText: 'PHP'
+            },
+            {
+                icon: '<i class="fab fa-python"></i>',
+                tooltipText: 'Python'
+            }
+        ]
     },
     {
-        icon: '<i class="fab fa-sass"></i>',
-        tooltipText: 'SCSS'
-    },
-    {
-        icon: '<i class="fab fa-js-square"></i>',
-        tooltipText: 'JavaScript'
-    },
-    {
-        icon: '<i class="fab fa-react"></i>',
-        tooltipText: 'React'
-    },
-    {
-        icon: '<i class="fab fa-php"></i>',
-        tooltipText: 'PHP'
-    },
-    {
-        icon: '<i class="fab fa-python"></i>',
-        tooltipText: 'Python'
-    },
-]
+        other: [
+            {
+                icon: '<i class="fab fa-php"></i>',
+                tooltipText: 'PHP'
+            },
+            {
+                icon: '<i class="fab fa-python"></i>',
+                tooltipText: 'Python'
+            }
+        ]
+    }
+];
 
 let educationData = [
     {
@@ -62,21 +82,42 @@ const populateEducation = () => {
     }
 }
 
-const populateSkills = () => {
-    const skills = document.getElementById('skills-li');
+const populateSkill = (tab, icon, tooltipText) => {
+    tab.innerHTML += `
+        <li>
+            <div class="tooltip">${icon}
+                <span class="tooltiptext">${tooltipText}</span>
+            </div>
+        </li>`;
+}
 
-    for (const key in skillsData){
-        if (skillsData.hasOwnProperty(key)) {
-            const element = skillsData[key];
-            skills.innerHTML += `
-                <li>
-                    <div class="tooltip">${element.icon}
-                        <span class="tooltiptext">${element.tooltipText}</span>
-                    </div>
-                </li>
-            `;
-          }
+const populateSkillTab = (array, type) => {
+    const skillsFrontend = document.getElementById('skills-li-frontend');
+    const skillsBackend = document.getElementById('skills-li-backend');
+    const skillsOther = document.getElementById('skills-li-other');
+
+    let i;
+    for (i = 0; i < array.length; i++){
+        console.log(array)
+        switch (type){
+            case 'FRONTEND':
+                populateSkill(skillsFrontend, array[i].icon, array[i].tooltipText);
+                break;
+            case 'BACKEND':
+                populateSkill(skillsBackend, array[i].icon, array[i].tooltipText);
+                break;
+            case 'OTHER':
+                populateSkill(skillsOther, array[i].icon, array[i].tooltipText);
+                break;
+        }
     }
+}
+
+const populateSkills = () => {
+    let i;
+    populateSkillTab(skillsData[0].frontend, 'FRONTEND')
+    populateSkillTab(skillsData[1].backend, 'BACKEND')
+    populateSkillTab(skillsData[2].other, 'OTHER')
 }
 
 export { populateSkills, populateEducation };

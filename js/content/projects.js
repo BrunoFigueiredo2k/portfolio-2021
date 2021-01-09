@@ -1,12 +1,16 @@
 const CLASS_RIGHT_CONTENT = 'right-content';
 const CLASS_LEFT_CONTENT = 'left-content';
 
+const generateId = () => {
+    return Math.floor(Math.random() * Date.now())
+}
+
 // Projects data
 const projects = [
     {
-        id: Math.floor(Math.random() * Date.now()),
+        id: generateId(),
         title: 'The Student Broker',
-        description: "Website where (international) students can sign up and search for student housing in the Netherlands.",
+        description: "Website where (international) students can sign up and search for student housing in the Netherlands. The website contains all information students and landlords need to know about our service.",
         technologies: ['Javascript', 'HTML/CSS', 'PHP', 'jQuery', 'Bootstrap'],
         linkGithub: null,
         linkWebsite: 'https://thestudentbroker.com/pages/index.php',
@@ -14,9 +18,9 @@ const projects = [
         directionContent: CLASS_RIGHT_CONTENT
     },
     {
-        id: Math.floor(Math.random() * Date.now()),
+        id: generateId(),
         title: 'KB Creative',
-        description: "Webdesign & development agency I'm the owner of together with one other developer.",
+        description: "Webdesign & development agency I'm the co-owner of. At KB Creative I'm a front-end developer working closely together with another back-end developer building fullstack web applications",
         technologies: ['Javascript', 'HTML/CSS'],
         linkGithub: 'https://github.com/BrunoFigueiredo2k/KB-Creative',
         linkWebsite: 'https://thestudentbroker.com/pages/index.php',
@@ -24,10 +28,10 @@ const projects = [
         directionContent: CLASS_LEFT_CONTENT
     },
     {
-        id: Math.floor(Math.random() * Date.now()),
-        title: 'URL shortening API',
-        description: "Landing page challenge from Frontend Mentor to practice some layouts/SCSS and some Javascript.",
-        technologies: ['Javascript', 'HTML/SCSS'],
+        id: generateId(),
+        title: 'URL shortener',
+        description: "Landing page where you can shorten long urls. This is a challenge from Frontend Mentor to practice some layouts/SCSS and some Javascript.",
+        technologies: ['Javascript', 'HTML/SCSS', 'API'],
         linkGithub: 'https://github.com/BrunoFigueiredo2k/url-shortening-api',
         linkWebsite: 'https://url-shortening-api-sepia.vercel.app/',
         img: '/images/projects/url-shortening-api.jpg',
