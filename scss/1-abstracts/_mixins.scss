@@ -102,3 +102,17 @@
         @include container(95%);
     }
 }
+
+@keyframes gradient {
+    0% {
+        background-position: 12% 50%;
+    }
+
+    50% {
+        background-position: 100% 75%;
+    }
+
+    100% {
+        background-position: 12% 50%;
+    }
+}

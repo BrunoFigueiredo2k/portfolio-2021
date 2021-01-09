@@ -11,9 +11,10 @@ section {
 #landing-section {
     padding: 0 0 60px 0;
     min-height: 100vh;
+    background: linear-gradient(-45deg, $very-light-grey, #ccc);
+    background-size: 400% 400%;
+    animation: gradient 110s ease infinite;
     @include backgroundImageCover('/images/bg-boost-desktop.svg');
-    background-blend-mode: lighten;
-    background-position: center;
 
     #col-left {
         display: table-cell;

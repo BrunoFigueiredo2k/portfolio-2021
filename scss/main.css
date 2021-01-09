@@ -15,6 +15,30 @@
   }
 }
 
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 12% 50%;
+  }
+  50% {
+    background-position: 100% 75%;
+  }
+  100% {
+    background-position: 12% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 12% 50%;
+  }
+  50% {
+    background-position: 100% 75%;
+  }
+  100% {
+    background-position: 12% 50%;
+  }
+}
+
 /* Import all base .scss files */
 *,
 *:before,
@@ -229,10 +253,8 @@ p {
   padding: 12px 25px;
   border-radius: 5px;
   border: 3px solid white;
-  -webkit-box-shadow: 0 7px 10px 7px #3a05700e;
-          box-shadow: 0 7px 10px 7px #3a05700e;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   display: inline-block;
 }
 
@@ -240,8 +262,8 @@ p {
 .cta-btn-uppercase:hover {
   -webkit-transform: scale(1.06);
           transform: scale(1.06);
-  -webkit-box-shadow: 0 7px 10px 7px #3a05701a;
-          box-shadow: 0 7px 10px 7px #3a05701a;
+  -webkit-box-shadow: 0 3px 10px 7px #3a057007;
+          box-shadow: 0 3px 10px 7px #3a057007;
   cursor: pointer;
   border-radius: 50px;
 }
@@ -621,7 +643,8 @@ textarea:focus {
 
 .progress-container .progress-bar {
   height: 8px;
-  background: #ab5ef6;
+  background: -webkit-gradient(linear, left top, right top, from(#760ADF), to(#ab5ef6));
+  background: linear-gradient(90deg, #760ADF 0%, #ab5ef6 100%);
   width: 0%;
 }
 
@@ -699,12 +722,14 @@ section {
 #landing-section {
   padding: 0 0 60px 0;
   min-height: 100vh;
+  background: linear-gradient(-45deg, #FCFCFC, #ccc);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 110s ease infinite;
+          animation: gradient 110s ease infinite;
   background: url("/images/bg-boost-desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 60%;
-  background-blend-mode: lighten;
-  background-position: center;
 }
 
 #landing-section #col-left {
