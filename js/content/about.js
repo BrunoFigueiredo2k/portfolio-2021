@@ -16,6 +16,10 @@ let skillsData = [
         tooltipText: 'JavaScript'
     },
     {
+        icon: '<i class="fab fa-react"></i>',
+        tooltipText: 'React'
+    },
+    {
         icon: '<i class="fab fa-php"></i>',
         tooltipText: 'PHP'
     },

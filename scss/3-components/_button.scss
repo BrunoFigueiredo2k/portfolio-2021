@@ -6,16 +6,17 @@
     font-weight: $weight-bold;
     font-size: #{$base-font-size - 2px};
     padding: 12px 25px;
-    border-radius: 50px;
-    border: none;
+    border-radius: 5px;
+    border: 3px solid white;
     box-shadow: $box-shadow-purple;
     transition: .5s ease;
     display: inline-block;
 
     &:hover {
-        transform: scale(1.03);
+        transform: scale(1.06);
         box-shadow: $box-shadow-purple-hover;
         cursor: pointer;
+        border-radius: 50px;
     }
 }
 
