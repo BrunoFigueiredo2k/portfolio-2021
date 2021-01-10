@@ -20,7 +20,15 @@ let skillsData = [
             {
                 icon: '<i class="fab fa-react"></i>',
                 tooltipText: 'React'
-            }
+            },
+            {
+                icon: '<img src="https://img.icons8.com/ios-filled/2x/jquery.png" alt="jquery" class="icon-skill-img"/>',
+                tooltipText: 'jQuery'
+            },
+            {
+                icon: '<img src="../../images/bootstrap-fill.svg" alt="bootstrap" class="icon-skill-img"/>',
+                tooltipText: 'Bootstrap'
+            },
         ]
     },
     {
@@ -30,20 +38,48 @@ let skillsData = [
                 tooltipText: 'PHP'
             },
             {
-                icon: '<i class="fab fa-python"></i>',
-                tooltipText: 'Python'
-            }
+                icon: '<img src="https://www.flaticon.com/svg/static/icons/svg/29/29165.svg" alt="SQL" class="icon-skill-img"/>',
+                tooltipText: 'SQL'
+            },
+            {
+                icon: '<img src="http://bruno-figueiredo.nl/img/icons-light-theme/mysql.png" alt="MySQL" class="icon-skill-img"/>',
+                tooltipText: 'MySQL'
+            },
         ]
     },
     {
         other: [
             {
-                icon: '<i class="fab fa-php"></i>',
-                tooltipText: 'PHP'
+                icon: '<i class="fab fa-wordpress"></i>',
+                tooltipText: 'Wordpress'
             },
             {
                 icon: '<i class="fab fa-python"></i>',
                 tooltipText: 'Python'
+            },
+            {
+                icon: '<img src="http://bruno-figueiredo.nl/img/icons-light-theme/java.png" alt="Java" class="icon-skill-img"/>',
+                tooltipText: 'Java'
+            },
+            {
+                icon: '<img src="http://bruno-figueiredo.nl/img/icons-light-theme/kotlin.png" alt="Kotlin" class="icon-skill-img"/>',
+                tooltipText: 'Kotlin'
+            },
+            {
+                icon: '<i class="fab fa-android"></i>',
+                tooltipText: 'Android Studio'
+            },
+            {
+                icon: '<img src="http://bruno-figueiredo.nl/img/icons-light-theme/scrum.png" alt="Scrum" class="icon-skill-img"/>',
+                tooltipText: 'Scrum'
+            },
+            {
+                icon: '<img src="http://bruno-figueiredo.nl/img/icons-light-theme/vscode.png" alt="vscode" class="icon-skill-img"/>',
+                tooltipText: 'VS Code'
+            },
+            {
+                icon: '<i class="fab fa-git-square"></i>',
+                tooltipText: 'Git'
             }
         ]
     }

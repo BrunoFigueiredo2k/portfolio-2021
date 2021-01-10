@@ -300,8 +300,7 @@ textarea:focus {
 
 .horizontal-list li {
   display: inline-block;
-  margin-left: -2px;
-  margin-right: 2em;
+  margin: 0 15px;
 }
 
 .horizontal-list li a {
@@ -347,7 +346,7 @@ textarea:focus {
 
 .socials-links {
   margin-top: 40px;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .socials-links li {
@@ -355,7 +354,7 @@ textarea:focus {
 }
 
 .socials-links a {
-  color: #35323E;
+  color: #35323E !important;
 }
 
 .skills-li {
@@ -492,11 +491,20 @@ textarea:focus {
   border-top: none;
 }
 
+.skills-tab li {
+  font-size: 40px;
+}
+
 .skills-tab p {
   margin: 10px 0 0 0;
   font-size: 14px;
   color: black;
   font-weight: 600;
+}
+
+.skills-tab .icon-skill-img {
+  height: 35px;
+  width: 35px;
 }
 
 .tooltip {
@@ -672,6 +680,54 @@ header {
   padding: 60px 0 50px 0;
   text-align: right;
   background-color: transparent;
+}
+
+footer {
+  padding: 3.2rem 0;
+  background-color: #efefef;
+  text-align: center;
+}
+
+footer p {
+  color: #35323E;
+  margin: 0;
+}
+
+footer .footer-socials li {
+  margin-bottom: 30px;
+}
+
+footer .footer-socials a {
+  background: -webkit-gradient(linear, left top, right top, from(#3B0570), to(#760ADF));
+  background: linear-gradient(90deg, #3B0570 0%, #760ADF 100%);
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 46px;
+  font-size: 20px;
+  display: inline-block;
+  color: white !important;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+footer .footer-socials a:hover {
+  background: white;
+  border: 3px solid #3B0570;
+  color: #3B0570 !important;
+}
+
+.sub-footer {
+  background-color: #35323E;
+  text-align: center;
+  margin: 0;
+  padding: 1.5rem 0;
+}
+
+.sub-footer p {
+  color: white !important;
+  margin: 0;
 }
 
 .row {

@@ -1,5 +1,6 @@
 /* General imports */
 import Header from './components/header.js';
+import Footer from './components/footer.js';
 import displayProjectsDOM from './content/projects.js';
 import { populateSkills, populateEducation } from './content/about.js';
 

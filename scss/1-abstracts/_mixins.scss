@@ -63,10 +63,7 @@
 
         display: inline-block;
 
-        margin: {
-            left: -2px;
-            right: 2em;
-        }
+        margin: 0 15px;
 
         @include mobile {
             margin: 0 10px !important;
