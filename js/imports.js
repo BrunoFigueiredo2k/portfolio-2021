@@ -3,10 +3,16 @@ import Header from './components/header.js';
 import Footer from './components/footer.js';
 import displayProjectsDOM from './content/projects.js';
 import { populateSkills, populateEducation } from './content/about.js';
+import {displayEducationDOM} from './content/experience.js';
 
-displayProjectsDOM();
-populateSkills();
-populateEducation();
+const populateDOM = () => {
+  displayProjectsDOM();
+  populateSkills();
+  populateEducation();
+  displayEducationDOM();
+}
+
+populateDOM();
 
 // Scrollbar indication
 window.onscroll = function() {scrollIndicator()};

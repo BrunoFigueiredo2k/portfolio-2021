@@ -134,7 +134,6 @@ const populateSkillTab = (array, type) => {
 
     let i;
     for (i = 0; i < array.length; i++){
-        console.log(array)
         switch (type){
             case 'FRONTEND':
                 populateSkill(skillsFrontend, array[i].icon, array[i].tooltipText);
@@ -150,7 +149,6 @@ const populateSkillTab = (array, type) => {
 }
 
 const populateSkills = () => {
-    let i;
     populateSkillTab(skillsData[0].frontend, 'FRONTEND')
     populateSkillTab(skillsData[1].backend, 'BACKEND')
     populateSkillTab(skillsData[2].other, 'OTHER')

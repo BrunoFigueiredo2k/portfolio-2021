@@ -1,7 +1,7 @@
 const CLASS_RIGHT_CONTENT = 'right-content';
 const CLASS_LEFT_CONTENT = 'left-content';
 
-const generateId = () => {
+export const generateId = () => {
     return Math.floor(Math.random() * Date.now())
 }
 
