@@ -23,7 +23,7 @@
 .active {
     color: $light-purple;
     background-color: transparent;
-    transition: $transition-ease;
+    transition: .5s;
 
     &:after {
         content: "";

@@ -12,7 +12,7 @@
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 10px 20px;
+    padding: 0;
     position: absolute;
     z-index: 1;
     bottom: 150%;
@@ -33,10 +33,11 @@
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+    padding: 10px 20px;
 }
 
 .tooltip .tooltiptext {
-    transition: $transition-ease;
+    transition: .3s ease;
     opacity: 0;
 }
 
