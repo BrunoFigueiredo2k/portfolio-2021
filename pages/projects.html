@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Bruno Figueiredo | Portfolio</title>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <!-- My scripts -->
@@ -13,17 +15,21 @@
 </head>
 
 <body>
-    <div class="breadcrum">
-        <h1 class="breadcrum-title">Projects</h1>
+    <div class="breadcrum" id="projects-breadcrum">
+        <div class="wrapper">
+            <h1 class="breadcrum-title">Projects</h1>
+        </div>
     </div>
 
-    <a href="./index.html" class="back-btn"><i class="fas fa-chevron-left"></i> Back</a>
+    <button class="scrollToTopBtn">☝️</button>
 
-    <div class="projects-grid">
-        <div class="row"></div>
+    <div class="projects-container">
+        <a href="./index.html" class="back-btn"><i class="fas fa-chevron-left"></i> Back</a>
+
+        <div class="projects-grid">
+            <div class="row" id="projects-row"></div>
+        </div>
     </div>
-
-    <footer-component></footer-component>
 
 </body>
 

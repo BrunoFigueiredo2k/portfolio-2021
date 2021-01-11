@@ -274,6 +274,37 @@ p {
   letter-spacing: 1px;
 }
 
+.scrollToTopBtn {
+  background-color: #35323E;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 48px;
+  width: 48px;
+  /* place it at the bottom right corner */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  /* keep it at the top of everything else */
+  z-index: 100;
+  /* hide with opacity */
+  opacity: 0;
+  /* also add a translate effect */
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  /* and a transition */
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.showBtn {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 /* Place all input components styling here */
 input,
 select,
@@ -381,6 +412,29 @@ textarea:focus {
   float: left;
 }
 
+.breadcrum {
+  text-align: center;
+  color: white;
+}
+
+.breadcrum .wrapper {
+  padding: 120px 0;
+  background-color: rgba(0, 0, 0, 0.685);
+}
+
+.breadcrum-title {
+  font-size: 60px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin: 0;
+}
+
+#projects-breadcrum {
+  background: url("https://images.hdqwalls.com/download/city-blurred-hd-2560x1440.jpg");
+  background-size: cover;
+  background-position: 90%;
+}
+
 .project {
   margin-top: 100px;
 }
@@ -438,6 +492,71 @@ textarea:focus {
   text-align: left;
   z-index: 99999;
   margin-right: -100px;
+}
+
+.projects-container {
+  padding: 40px;
+}
+
+.projects-container .back-btn {
+  border-radius: 5px;
+  padding: 15px 25px;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.09);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.09);
+  color: #35323E;
+  font-size: 18px;
+  -webkit-transition: -webkit-box-shadow .5s;
+  transition: -webkit-box-shadow .5s;
+  transition: box-shadow .5s;
+  transition: box-shadow .5s, -webkit-box-shadow .5s;
+}
+
+.projects-container .back-btn:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.07);
+          box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.07);
+}
+
+.projects-container-grid {
+  display: inline-block;
+}
+
+.projects-container .projects-grid {
+  padding-bottom: 10%;
+}
+
+.projects-container .projects-grid .project {
+  padding: 15px !important;
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.projects-container .projects-grid .project .content {
+  background-color: #35323E;
+  color: white;
+  position: relative;
+  bottom: 0;
+}
+
+.projects-container .projects-grid .project .content .bottom {
+  padding: 20px;
+}
+
+.projects-container .projects-grid .project .content img {
+  width: 100%;
+  padding: 0;
+}
+
+.projects-container .projects-grid .project .content .title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+}
+
+.projects-container .projects-grid .project .content .description {
+  color: white;
 }
 
 /* Style the tab */
@@ -628,7 +747,7 @@ textarea:focus {
 }
 
 ::-webkit-scrollbar {
-  width: 16px;
+  width: 14px;
 }
 
 /* Track */
@@ -639,8 +758,8 @@ textarea:focus {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: -webkit-gradient(linear, left top, right top, from(#760ADF), color-stop(150%, #ab5ef6));
-  background: linear-gradient(90deg, #760ADF 0%, #ab5ef6 150%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#760ADF), to(#ab5ef6));
+  background: linear-gradient(360deg, #760ADF 0%, #ab5ef6 100%);
   border-radius: 10px;
 }
 
@@ -695,24 +814,22 @@ footer .footer-socials li {
 }
 
 footer .footer-socials a {
-  background: -webkit-gradient(linear, left top, right top, from(#3B0570), to(#760ADF));
-  background: linear-gradient(90deg, #3B0570 0%, #760ADF 100%);
-  border: 3px solid white;
+  background: transparent;
+  border: 3px solid #35323E;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   line-height: 46px;
   font-size: 20px;
   display: inline-block;
-  color: white !important;
+  color: #35323E !important;
   -webkit-transition: .5s ease;
   transition: .5s ease;
 }
 
 footer .footer-socials a:hover {
-  background: white;
-  border: 3px solid #3B0570;
-  color: #3B0570 !important;
+  background: #35323E;
+  color: white !important;
 }
 
 .sub-footer {

@@ -100,4 +100,45 @@ const displayProjectsDOM = () => {
     }
 }
 
-export default displayProjectsDOM;
+/** PROJECTS PAGE */
+const projectsAll = [
+    {
+        title: "Men Spa / Barbershop",
+        description: "Male barbershop/spa that displays the shop's information about service and costs.",
+        img: "http://bruno-figueiredo.nl/img/projects/project1.jpg"
+    },
+    {
+        title: "Easybank - Landing page",
+        description: "Simple landing page challenge from Frontend Mentor to practice some layouts and SCSS.",
+        img: "http://bruno-figueiredo.nl/img/projects/easybank-landing-page.jpg"
+    },
+    {
+        title: "Coffee Shop",
+        description: "Simple landing page challenge from Frontend Mentor to practice some layouts and SCSS.",
+        img: "http://bruno-figueiredo.nl/img/projects/project-coffee.jpg"
+    }
+]
+
+const displayProjectsPage = () => {
+    // Push data from home page projects to this array of all projects
+    projects.map(project => { projectsAll.push(project) })
+    
+    const row = document.getElementById('projects-row');
+    // Get projects and populate DOM of all projects
+    projectsAll.map(project => {
+        row.innerHTML += `
+        <div class="project col-4">
+            <div class="content">
+                <img src="${project.img}"/>
+                <div class="bottom">
+                    <h2 class="title">${project.title}</h2>
+                    <p class="description">${project.description.slice(0, 75) + "..."}</p>
+                </div>
+            </div>
+        </div>
+        `
+        console.log(project.img)
+    })
+}
+
+export {displayProjectsDOM, displayProjectsPage};
