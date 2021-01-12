@@ -90,6 +90,17 @@
                 color: white;
                 position: relative;
                 bottom: 0;
+                -webkit-filter: brightness(100%);
+                -webkit-transition: all .5s ease;
+                -moz-transition: all .5s ease;
+                -o-transition: all .5s ease;
+                -ms-transition: all .5s ease;
+                transition: all .5s ease;
+
+                &:hover {
+                    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.1);
+                    margin-top: -10px;
+                }
 
                 .bottom {
                     padding: 20px;

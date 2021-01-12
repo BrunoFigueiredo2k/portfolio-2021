@@ -105,17 +105,20 @@ const projectsAll = [
     {
         title: "Men Spa / Barbershop",
         description: "Male barbershop/spa that displays the shop's information about service and costs.",
-        img: "http://bruno-figueiredo.nl/img/projects/project1.jpg"
+        img: "http://bruno-figueiredo.nl/img/projects/project1.jpg",
+        linkWebsite: "http://bruno-figueiredo.nl/Portfolio/Men%20Spa/index.html"
     },
     {
-        title: "Easybank - Landing page",
+        title: "Easybank",
         description: "Simple landing page challenge from Frontend Mentor to practice some layouts and SCSS.",
-        img: "http://bruno-figueiredo.nl/img/projects/easybank-landing-page.jpg"
+        img: "http://bruno-figueiredo.nl/img/projects/easybank-landing-page.jpg",
+        linkWebsite: "https://easybank-landing-page.brunofigueiredo2k.vercel.app/"
     },
     {
         title: "Coffee Shop",
         description: "Simple landing page challenge from Frontend Mentor to practice some layouts and SCSS.",
-        img: "http://bruno-figueiredo.nl/img/projects/project-coffee.jpg"
+        img: "http://bruno-figueiredo.nl/img/projects/project-coffee.jpg",
+        linkWebsite: "http://bruno-figueiredo.nl/Portfolio/coffee-landing-page/index.html"
     }
 ]
 
@@ -131,13 +134,13 @@ const displayProjectsPage = () => {
             <div class="content">
                 <img src="${project.img}"/>
                 <div class="bottom">
-                    <h2 class="title">${project.title}</h2>
-                    <p class="description">${project.description.slice(0, 75) + "..."}</p>
+                    <h2 class="title">${project.title} <a href="${project.linkWebsite}" target="_blank" rel="noreferrer">
+                        <i class="fas fa-external-link-alt sm-icon"></i></a></h2>
+                    <p class="description">${project.description.slice(0, 65) + "..."}</p>
                 </div>
             </div>
         </div>
-        `
-        console.log(project.img)
+        `;
     })
 }
 

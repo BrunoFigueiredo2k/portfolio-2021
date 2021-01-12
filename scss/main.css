@@ -1,6 +1,7 @@
 /* Import all .scss directories */
 /* Import all abstracts .scss files */
 /* Font Imports */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* Mixins */
 .container {
@@ -167,6 +168,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-family: "Roboto", sans-serif !important;
+}
+
 /**
  * Typography
  * =================================
@@ -303,6 +308,15 @@ p {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.sm-icon {
+  font-size: 14px;
+  color: #35323E;
+  float: right;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 /* Place all input components styling here */
@@ -538,6 +552,15 @@ textarea:focus {
   color: white;
   position: relative;
   bottom: 0;
+  -webkit-filter: brightness(100%);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.projects-container .projects-grid .project .content:hover {
+  -webkit-box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.1);
+  margin-top: -10px;
 }
 
 .projects-container .projects-grid .project .content .bottom {
