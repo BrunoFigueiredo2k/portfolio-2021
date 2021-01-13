@@ -48,13 +48,13 @@ const displayProjectsDOM = () => {
             const element = projects[property];
 
             const columnImg = `
-                <div class="col">
+                <div class="col" data-aos="zoom-in-right" data-aos-duration="1000">
                     <a href="${element.linkWebsite}"><img src="${element.img}" alt="${element.title}" class="project-img"></a>
                 </div>
             `;
 
             const columnContent = `
-                <div class="col project-content ${element.directionContent}">
+                <div class="col project-content ${element.directionContent}" data-aos="zoom-in-left" data-aos-duration="1000">
                     <h3 class="project-title">${element.title}</h3>
                     <div class="project-card">
                         <p class="project-description">${element.description}</p>
