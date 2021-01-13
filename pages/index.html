@@ -56,9 +56,9 @@
                         typesetting industry.</p>
 
                     <div class="tab">
-                        <button class="tablinks active" onclick="clickTab(event, 'skills' )">Skills</button>
-                        <button class="tablinks" onclick="clickTab(event, 'education')">Education</button>
-                        <button class="tablinks" onclick="clickTab(event, 'hobbies')">Hobbies</button>
+                        <button class="tablinks active" onclick="clickTab(event, 'skills', true)">Skills</button>
+                        <button class="tablinks" onclick="clickTab(event, 'education', true)">Education</button>
+                        <button class="tablinks" onclick="clickTab(event, 'hobbies', true)">Hobbies</button>
                     </div>
 
                     <div id="skills" class="tabcontent skills-tab" style="display: block;">
@@ -108,15 +108,32 @@
             <!-- TODO: Add experience via js here -->
             <div class="row">
                 <div class="col-4">
-                    <ul class="vertical-list list-experience">
-                        <li id="codeerschool">De Codeerschool</li>
-                        <li id="kb-creative">KB Creative</li>
-                        <li id="tsb">The Student Broker</li>
-                        <li id="gladwell-academy">Gladwell Academy</li>
+                    <ul class="vertical-list vertical-tabs">
+                        <li class="tablinks" onclick="clickTab(event, 'codeerschool', false)" id="codeerschool">De
+                            Codeerschool
+                        </li>
+                        <li class="tablinks" onclick="clickTab(event, 'kbcreative', false)" id="kbcreative">KB Creative
+                        </li>
+                        <li class="tablinks" onclick="clickTab(event, 'tsb', false)" id="tsb">The Student Broker</li>
+                        <li class="tablinks" onclick="clickTab(event, 'gladwell', false)" id="gladwell">GladwellAcademy
+                        </li>
                     </ul>
                 </div>
                 <div class="col-8" id="content-experience">
+                    <div id="London" class="tabcontent" style="display: block;">
+                        <h3>London</h3>
+                        <p>London is the capital city of England.</p>
+                    </div>
 
+                    <div id="Paris" class="tabcontent">
+                        <h3>Paris</h3>
+                        <p>Paris is the capital of France.</p>
+                    </div>
+
+                    <div id="Tokyo" class="tabcontent">
+                        <h3>Tokyo</h3>
+                        <p>Tokyo is the capital of Japan.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -153,7 +170,7 @@
 
 <script>
     // Click tab functionality
-    function clickTab(evt, name) {
+    function clickTab(evt, name, horizontal) {
         let i, tabcontent, tablinks;
 
         tabcontent = document.getElementsByClassName("tabcontent");
@@ -163,11 +180,22 @@
 
         tablinks = document.getElementsByClassName("tablinks");
         for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
+
+            // If the list is horizontal add horizontal active class else add vertical tabs active class
+            if (horizontal) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            } else {
+                tablinks[i].className = tablinks[i].className.replace(" active-vertical", "");
+            }
         }
 
         document.getElementById(name).style.display = "block";
-        evt.currentTarget.className += " active";
+
+        if (horizontal) {
+            evt.currentTarget.className += " active";
+        } else {
+            evt.currentTarget.className += " active-vertical";
+        }
     }
 </script>
 
