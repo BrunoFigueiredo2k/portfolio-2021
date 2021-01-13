@@ -246,6 +246,16 @@ p {
   font-size: 18px;
 }
 
+.p-under-title {
+  width: 60%;
+}
+
+@media (max-width: 1340px) {
+  .p-under-title {
+    width: 100%;
+  }
+}
+
 /* Import all components .scss files */
 /* Place all button components styling here */
 .cta-btn,
@@ -580,6 +590,43 @@ textarea:focus {
 
 .projects-container .projects-grid .project .content .description {
   color: white;
+}
+
+.prev-portolio {
+  margin: 100px 0;
+  background-color: #FCFCFC;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.07);
+          box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.07);
+}
+
+.prev-portolio .left-img {
+  padding-right: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.prev-portolio .right-img {
+  padding-left: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.prev-portolio .content {
+  padding: 20px;
+}
+
+.prev-portolio img {
+  height: 100%;
+  width: 100%;
+}
+
+.prev-portolio .title-previous {
+  color: #35323E;
+  font-size: 26px;
+  margin: 20px 0;
+  font-weight: 600;
+  text-shadow: 2px 0 5px #3a057048;
 }
 
 /* Style the tab */

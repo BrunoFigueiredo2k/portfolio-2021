@@ -105,19 +105,19 @@ const projectsAll = [
     {
         title: "Men Spa / Barbershop",
         description: "Male barbershop/spa that displays the shop's information about service and costs.",
-        img: "http://bruno-figueiredo.nl/img/projects/project1.jpg",
+        img: "../../images/projects/barbershop.jpg",
         linkWebsite: "http://bruno-figueiredo.nl/Portfolio/Men%20Spa/index.html"
     },
     {
         title: "Easybank",
         description: "Simple landing page challenge from Frontend Mentor to practice some layouts and SCSS.",
-        img: "http://bruno-figueiredo.nl/img/projects/easybank-landing-page.jpg",
+        img: "../../images/projects/easybank-landing-page.jpg",
         linkWebsite: "https://easybank-landing-page.brunofigueiredo2k.vercel.app/"
     },
     {
         title: "Coffee Shop",
         description: "Simple landing page challenge from Frontend Mentor to practice some layouts and SCSS.",
-        img: "http://bruno-figueiredo.nl/img/projects/project-coffee.jpg",
+        img: "../../images/projects/project-coffee.jpg",
         linkWebsite: "http://bruno-figueiredo.nl/Portfolio/coffee-landing-page/index.html"
     }
 ]
@@ -130,7 +130,7 @@ const displayProjectsPage = () => {
     // Get projects and populate DOM of all projects
     projectsAll.map(project => {
         row.innerHTML += `
-        <div class="project col-4">
+        <div class="project col-4" data-aos="zoom-in-up">
             <div class="content">
                 <img src="${project.img}"/>
                 <div class="bottom">

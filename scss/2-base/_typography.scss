@@ -35,7 +35,7 @@ h6 {
     color: $black;
     font-weight: $weight-normal;
     margin-bottom: $margin-typography;
-    text-shadow: 2px 0 5px #3a057048;
+    text-shadow: $txt-shadow;
 
     span {
         color: $purple;
@@ -65,4 +65,12 @@ p {
     color: $grey;
     line-height: 1.6em;
     font-size: $base-font-size;
+}
+
+.p-under-title {
+    width: 60%;
+
+    @include mobile {
+        width: 100%;
+    }
 }
