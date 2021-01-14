@@ -119,12 +119,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-8" id="content-experience">
-                    <div id="codeerschool" class="tabcontent" style="display: block;">
-                        <h3>London</h3>
-                        <p>London is the capital city of England.</p>
-                    </div>
-                </div>
+                <div class="col-8" id="content-experience"></div>
             </div>
         </div>
     </section>
@@ -163,22 +158,22 @@
     function clickTab(evt, name, horizontal) {
         let i, tabcontent, tablinks;
 
+        /** RESET STYLING **/
         tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-
         tablinks = document.getElementsByClassName("tablinks");
+
         for (i = 0; i < tablinks.length; i++) {
+            tabcontent[i].style.display = "none";
             // If the list is horizontal add horizontal active class else add vertical tabs active class
             if (horizontal) {
                 tablinks[i].className = tablinks[i].className.replace(" active", "");
             } else {
                 tablinks[i].className = tablinks[i].className.replace(" active-vertical", "");
             }
-        }
 
-        document.getElementById(name).style.display = "block";
+            // Set display to block if the name passed is the same as the id of the element
+            if (tabcontent[i].id == name + "-content") { tabcontent[i].style.display = "block"; }
+        }
 
         if (horizontal) {
             evt.currentTarget.className += " active";

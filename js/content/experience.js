@@ -3,7 +3,7 @@ import {generateId} from '../content/projects.js'
 const experienceData = [
     {
         id: generateId(),
-        elemId: "codeerschool",
+        elemId: "codeerschool-content",
         company: "De Codeerschool",
         role: "Front-end Developer",
         date: "October 2020 - Now",
@@ -21,7 +21,7 @@ const experienceData = [
     },
     {
         id: generateId(),
-        elemId: "kbcreative",
+        elemId: "kbcreative-content",
         company: "KB Creative",
         role: "Owner",
         date: "October 2020 - Now",
@@ -38,7 +38,7 @@ const experienceData = [
     },
     {
         id: generateId(),
-        elemId: "tsb",
+        elemId: "tsb-content",
         company: "The Student Broker",
         role: "Front-end Developer",
         date: "April 2020 - Now",
@@ -58,7 +58,7 @@ const experienceData = [
     },
     {
         id: generateId(),
-        elemId: "gladwell",
+        elemId: "gladwell-content",
         company: "Gladwell Academy",
         role: "Jr. Webmaster",
         date: "February - June 2020",
@@ -91,11 +91,11 @@ const displayEducationDOM = () => {
                 <ul class="horizontal-list">
                     ${populateList('tech')}
                 </ul>
-        </div>
+            </div>
         `;
 
         // If property item default open is true then display that tab, the rest is hidden at first
-        if (item.defaultOpen) { document.getElementById(item.elemId).style.display = "block" }
+        if (item.defaultOpen) { document.getElementById(item.elemId).style.display = "block"; }
     })
 
 }
