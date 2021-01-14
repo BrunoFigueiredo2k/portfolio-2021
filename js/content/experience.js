@@ -8,8 +8,9 @@ const experienceData = [
         role: "Front-end Developer",
         date: "October 2020 - Now",
         roles: [
-            "Create front-end of several different projects based on designs provided.",
-            "Working with several different technologies depending on the project."
+            "Create front-end and functionality of several different projects based on designs provided.",
+            "Working with several different technologies depending on the project.",
+            "Think about design choices and create new designs if necessary (UI/UX)."
         ],
         tech: [
             "Java",
@@ -26,8 +27,8 @@ const experienceData = [
         role: "Owner",
         date: "October 2020 - Now",
         roles: [
-            "Create front-end of several different projects based on designs provided.",
-            "Working with several different technologies depending on the project."
+            "Take on several different web development projects by creating webshops, SaaS apps and static websites.",
+            "Handle communication with clients and other partners we work together with."
         ],
         tech: [
             "HTML",
@@ -43,8 +44,10 @@ const experienceData = [
         role: "Front-end Developer",
         date: "April 2020 - Now",
         roles: [
-            "Create front-end of several different projects based on designs provided.",
-            "Working with several different technologies depending on the project."
+            "Built front-end of the main website where students can sign up and find all information and landlords can get in contact.",
+            "Built admin panel where employees can view all necessary information concerning all the data.",
+            "Implemented analytics tools such as Google Analytics, Hotjar and Facebook pixel.",
+            "Maintaining and improving website based on testing and user feedback by building new features."
         ],
         tech: [
             "HTML",
@@ -63,8 +66,9 @@ const experienceData = [
         role: "Jr. Webmaster",
         date: "February - June 2020",
         roles: [
-            "Create front-end of several different projects based on designs provided.",
-            "Working with several different technologies depending on the project."
+            "Maintained 5+ Wordpress websites by building new features, adding content and redesigning parts of the website(s).",
+            "Researched what could've been done in order to improve the user experience and conversion rate.",
+            "Improved SEO/performance and analysed trends based on data from tools such as Google Analytics and Hotjar to improve the conversion rates."
         ],
         tech: [
             "Wordpress",
@@ -82,14 +86,14 @@ const displayEducationDOM = () => {
     experienceData.map(item => {
         contentExperience.innerHTML += `
             <div id="${item.elemId}" class="tabcontent">
-                <h4 class="job-title">${item.company}</h4>
+                <h4 class="job-title">${item.role}</h4>
                 <p class="job-date">${item.date}</p>
                 <ul class="job-activities" id="activities-${item.id}">
-                    ${populateList('activities')}
+                    ${populateList(item, 'activities')}
                 </ul>
                 <h6 class="job-tech">Used technologies:</h6>
                 <ul class="horizontal-list">
-                    ${populateList('tech')}
+                    ${populateList(item, 'tech')}
                 </ul>
             </div>
         `;
@@ -100,19 +104,19 @@ const displayEducationDOM = () => {
 
 }
 
-const populateList = (type) => {
-    for (let i = 0; i < experienceData.length; i++){
-        switch (type){
-            case 'activities':
-                for (let j = 0; j < experienceData[i].roles.length; j++){
-                    console.log(j)
-                    console.log(experienceData[i].roles[j])
-                    return `<li>${experienceData[i].roles[j]}</li>`;
-                }
-            case 'tech':
-                return `<li>${experienceData[i].tech[i]}</li>`;
-        }
-        // let activiesList = document.getElementById(`activities-${experienceData[i].id}`)
+const populateList = (item, type) => {
+    let listElement;
+    switch (type){
+        case 'activities':
+            for (let i = 0; i < item.roles.length; i++){
+                listElement += `<li><span>${item.roles[i]}</span></li>`;
+            }
+            return listElement;
+        case 'tech':
+            for (let i = 0; i < item.tech.length; i++){
+                listElement += `<li>${item.tech[i]}</li>`;
+            }
+            return listElement;
     }
 }
 

@@ -49,11 +49,11 @@
                 </div>
                 <div class="col-8">
                     <h2 class="title-section">About me</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy.Lorem Ipsum is simply
-                        dummy text of the printing and
-                        typesetting industry.</p>
+                    <p>Hello! I'm Bruno, a front-end developer based in Amsterdam, Netherlands.
+
+                        I enjoy creating applications that help make people's life easier. My goal is to always build
+                        products that are performant, secure and give people a good experience regardless of their
+                        device.</p>
 
                     <div class="tab">
                         <button class="tablinks active" onclick="clickTab(event, 'skills', true)">Skills</button>
@@ -109,7 +109,8 @@
             <div class="row">
                 <div class="col-4">
                     <ul class="vertical-list vertical-tabs">
-                        <li class="tablinks" onclick="clickTab(event, 'codeerschool', false)" id="codeerschool">De
+                        <li class="tablinks active-vertical" onclick="clickTab(event, 'codeerschool', false)"
+                            id="codeerschool">De
                             Codeerschool
                         </li>
                         <li class="tablinks" onclick="clickTab(event, 'kbcreative', false)" id="kbcreative">KB Creative
@@ -154,7 +155,6 @@
 </body>
 
 <script>
-    // Click tab functionality
     function clickTab(evt, name, horizontal) {
         let i, tabcontent, tablinks;
 
@@ -172,7 +172,9 @@
             }
 
             // Set display to block if the name passed is the same as the id of the element
-            if (tabcontent[i].id == name + "-content") { tabcontent[i].style.display = "block"; }
+            if (tabcontent[i].id == name + "-content" || tabcontent[i].id == name) {
+                tabcontent[i].style.display = "block";
+            }
         }
 
         if (horizontal) {

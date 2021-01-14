@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Import all .scss directories */
 /* Import all abstracts .scss files */
 /* Font Imports */
@@ -681,6 +682,51 @@ textarea:focus {
   display: none;
   padding: 6px 0;
   border-top: none;
+}
+
+.tabcontent .job-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #3B0570;
+}
+
+.tabcontent .job-date {
+  margin-top: 10px;
+  color: #848486;
+  font-size: 17px;
+}
+
+.tabcontent .job-activities {
+  margin-bottom: 40px;
+}
+
+.tabcontent .job-activities li {
+  margin: 10px 0 20px 0;
+  position: relative;
+  padding-left: 40px;
+  font-size: 40px;
+}
+
+.tabcontent .job-activities li:before {
+  content: "▹";
+  color: #760ADF;
+  position: absolute;
+  left: 0;
+  top: 7px;
+  font-weight: bold;
+  -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+}
+
+.tabcontent .job-activities li span {
+  font-size: 18px;
+  color: #35323E;
+}
+
+.tabcontent .job-tech {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .skills-tab li {
