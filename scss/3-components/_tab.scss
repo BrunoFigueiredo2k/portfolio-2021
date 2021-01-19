@@ -46,6 +46,11 @@
     display: none;
     padding: 6px 0;
     border-top: none;
+    opacity: 0;
+    -webkit-transform: translateY(30%);
+    transform: translateY(30%);
+    -webkit-animation: fadeIn 0.9s forwards;
+    animation: fadeIn 0.9s forwards;
 
     .job-title {
         font-size: 26px;
@@ -129,5 +134,21 @@
             color: darken(#ccc, 40%);
             font-weight: 600;
         }
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
 }

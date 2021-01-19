@@ -7,10 +7,10 @@
     z-index: 99999;
 
     .progress-bar {
-        height: 8px;
-        background: linear-gradient(90deg, $purple 0%, $light-purple 100%);
-        width: 0%;
-    }
+    height: 8px;
+    background: linear-gradient(90deg, $purple 0%, $light-purple 100%);
+    width: 0%;
+}
 
     .content {
         padding: 100px 0;

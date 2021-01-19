@@ -88,7 +88,7 @@ const displayEducationDOM = () => {
             <div id="${item.elemId}" class="tabcontent">
                 <h4 class="job-title">${item.role}</h4>
                 <p class="job-date">${item.date}</p>
-                <ul class="job-activities" id="activities-${item.id}">
+                <ul class="job-activities">
                     ${populateList(item, 'activities')}
                 </ul>
                 <h6 class="job-tech">Used technologies:</h6>
@@ -105,7 +105,7 @@ const displayEducationDOM = () => {
 }
 
 const populateList = (item, type) => {
-    let listElement;
+    let listElement = "";
     switch (type){
         case 'activities':
             for (let i = 0; i < item.roles.length; i++){
@@ -117,6 +117,8 @@ const populateList = (item, type) => {
                 listElement += `<li>${item.tech[i]}</li>`;
             }
             return listElement;
+        default:
+            break;
     }
 }
 

@@ -54,6 +54,12 @@ html {
 }
 
 html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+html,
 body,
 div,
 span,
@@ -262,6 +268,7 @@ p {
 .cta-btn,
 .cta-btn-uppercase {
   color: #35323E !important;
+  background: transparent;
   background-color: transparent;
   font-weight: 700;
   font-size: 16px;
@@ -269,8 +276,8 @@ p {
   border-radius: 5px;
   font-size: 20px;
   border: 2px solid #35323E;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s ease-in !important;
+  transition: 0.3s ease-in !important;
   display: inline-block;
   position: relative;
 }
@@ -682,6 +689,11 @@ textarea:focus {
   display: none;
   padding: 6px 0;
   border-top: none;
+  opacity: 0;
+  -webkit-transform: translateY(30%);
+  transform: translateY(30%);
+  -webkit-animation: fadeIn 0.9s forwards;
+  animation: fadeIn 0.9s forwards;
 }
 
 .tabcontent .job-title {
@@ -765,6 +777,22 @@ textarea:focus {
   border-left: 5px solid #999999;
   color: #666666;
   font-weight: 600;
+}
+
+@-webkit-keyframes fadeIn {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
 
 .tooltip {
@@ -978,6 +1006,11 @@ footer .footer-socials a:hover {
 }
 
 .sub-footer {
+  opacity: 0.9;
+  background: url("https://url-shortening-api-git-master.brunofigueiredo2k.vercel.app/images/bg-boost-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60%;
   background-color: #35323E;
   text-align: center;
   margin: 0;

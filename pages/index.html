@@ -44,7 +44,7 @@
     <section id="about">
         <div class="container">
             <div class="row" data-aos="zoom-in-up">
-                <div class="col-4 text-center">
+                <div class="col-4 text-center about-img-container">
                     <img src="/images/bruno-figueiredo.png" alt="bruno-figueiredo" id="self-img">
                 </div>
                 <div class="col-8">
@@ -109,14 +109,17 @@
             <div class="row">
                 <div class="col-4">
                     <ul class="vertical-list vertical-tabs" data-aos="fade-right">
-                        <li class="tablinks active-vertical" onclick="clickTab(event, 'codeerschool', false)"
-                            id="codeerschool">De
+                        <li class="tablinks active-vertical tablinks-vertical"
+                            onclick="clickTab(event, 'codeerschool', false)" id="codeerschool">De
                             Codeerschool
                         </li>
-                        <li class="tablinks" onclick="clickTab(event, 'kbcreative', false)" id="kbcreative">KB Creative
+                        <li class="tablinks tablinks-vertical" onclick="clickTab(event, 'kbcreative', false)"
+                            id="kbcreative">KB Creative
                         </li>
-                        <li class="tablinks" onclick="clickTab(event, 'tsb', false)" id="tsb">The Student Broker</li>
-                        <li class="tablinks" onclick="clickTab(event, 'gladwell', false)" id="gladwell">GladwellAcademy
+                        <li class="tablinks tablinks-vertical" onclick="clickTab(event, 'tsb', false)" id="tsb">The
+                            Student Broker</li>
+                        <li class="tablinks tablinks-vertical" onclick="clickTab(event, 'gladwell', false)"
+                            id="gladwell">GladwellAcademy
                         </li>
                     </ul>
                 </div>
@@ -153,6 +156,16 @@
 </body>
 
 <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () { myFunction() };
+
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+    }
+
     function clickTab(evt, name, horizontal) {
         let i, tabcontent, tablinks;
 

@@ -2,6 +2,7 @@
 .cta-btn,
 .cta-btn-uppercase {
     color: $black !important;
+    background: transparent;
     background-color: transparent;
     font-weight: $weight-bold;
     font-size: #{$base-font-size - 2px};
@@ -9,7 +10,7 @@
     border-radius: 5px;
     font-size: 20px;
     border: 2px solid $black;
-    transition: 0.5s;
+    transition: 0.3s ease-in !important;
     display: inline-block;
     position: relative;
 

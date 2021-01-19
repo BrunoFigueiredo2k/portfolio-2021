@@ -34,6 +34,8 @@ footer {
 }
 
 .sub-footer {
+    opacity: 0.9;
+    @include backgroundImageCover('https://url-shortening-api-git-master.brunofigueiredo2k.vercel.app/images/bg-boost-desktop.svg');
     background-color: $black;
     text-align: center;
     margin: 0;

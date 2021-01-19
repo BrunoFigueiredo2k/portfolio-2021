@@ -14,16 +14,8 @@ const populateDOM = () => {
 
 if (document.URL.includes("index") ) {
   populateDOM();
-  window.onscroll = () => function() {scrollIndicator()};
 } else if (document.URL.includes("projects")){
   displayProjectsPage();
-}
-
-function scrollIndicator() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
 }
 
 // Scroll animation
@@ -77,11 +69,11 @@ document.addEventListener("scroll", handleScroll)
 
 AOS.init();
 
-    AOS.init({
-        offset: 0, // offset (in px) from the original trigger point
-        delay: 200, // values from 0 to 3000, with step 50ms
-        duration: 900, // values from 0 to 3000, with step 50ms
-        easing: 'ease', // default easing for AOS animations
-        once: true, // whether animation should happen only once - while scrolling down
-        mirror: false, // whether elements should animate out while scrolling past them
-    });
+AOS.init({
+    offset: 0, // offset (in px) from the original trigger point
+    delay: 200, // values from 0 to 3000, with step 50ms
+    duration: 900, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: true, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+});
