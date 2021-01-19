@@ -77,3 +77,44 @@ AOS.init({
     once: true, // whether animation should happen only once - while scrolling down
     mirror: false, // whether elements should animate out while scrolling past them
 });
+
+/* Mobile menu */
+const CLOSE_ICON = `&#x2715;`;
+const HAMBURGER_ICON = `&#x2630;`;
+const mobileMenu = document.querySelector('#mobile-menu-li');
+
+const mobileBtn = document.querySelector('#mobile-btn');
+var btnTxt = document.getElementById('mobile-btn').innerText;
+
+// Click listener hamburger menu btn
+mobileBtn.addEventListener('click', () => {
+    if (btnTxt == HAMBURGER_ICON){
+        mobileMenuActive(true);
+        mobileMenu.style.display = 'inline-block';
+
+        // Onclick outside hide again
+        event.stopPropagation();
+        window.onclick = function(e) {
+            if(e.target != mobileMenu) {
+                mobileMenuActive(false);
+                mobileMenu.style.display = 'none';
+            } else {
+                mobileMenu.style.display = 'inline-block';
+            }
+        }    
+    } else {
+        mobileMenuActive(false);
+        mobileMenu.style.display = 'none';
+    }
+});
+
+// Toggle source of mobile menu image btn
+function mobileMenuActive(active){
+    if (active){
+        btnTxt = CLOSE_ICON;
+        mobileBtn.innerHTML = CLOSE_ICON;
+    } else {
+        btnTxt = HAMBURGER_ICON;
+        mobileBtn.innerHTML = HAMBURGER_ICON;
+    }
+}

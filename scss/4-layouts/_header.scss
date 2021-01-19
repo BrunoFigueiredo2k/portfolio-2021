@@ -3,4 +3,71 @@ header {
     padding: 60px 0 50px 0;
     text-align: right;
     background-color: transparent;
+
+    .desktop-menu {
+        @include mobile {
+            display: none;
+        }
+    }
+}
+
+#mobile-right {
+    display: none;
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    z-index: 999999;
+
+    @include mobile {
+        display: inline-block;
+
+        #mobile-btn {
+            color: $black;
+            font-size: 37px;
+            z-index: 99999;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.mobile-menu {
+    font-size: 18px;
+    z-index: 9999;
+    padding: 15px 25px 15px 25px;
+    font-weight: $weight-bold;
+    text-align: center;
+    background-color: $black;
+    z-index: 9999;
+    border-radius: 10px;
+    @include container(90%);
+    position: fixed;
+    left: 5%;
+    display: none;
+    box-shadow: 0 0 400px 0 black;
+
+    li {
+        margin: 30px 0;
+
+        a {
+            color: white;
+            transition: $transition-ease;
+
+            &:hover {
+                color: $light-purple;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+        .cta-btn-mobile {
+            color: lighten($light-purple, 20%);
+            font-size: 22px;
+        }
+    }
 }

@@ -971,6 +971,76 @@ header {
   background-color: transparent;
 }
 
+@media (max-width: 1340px) {
+  header .desktop-menu {
+    display: none;
+  }
+}
+
+#mobile-right {
+  display: none;
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  z-index: 999999;
+}
+
+@media (max-width: 1340px) {
+  #mobile-right {
+    display: inline-block;
+  }
+  #mobile-right #mobile-btn {
+    color: #35323E;
+    font-size: 37px;
+    z-index: 99999;
+  }
+  #mobile-right #mobile-btn:hover {
+    cursor: pointer;
+  }
+}
+
+.mobile-menu {
+  font-size: 18px;
+  z-index: 9999;
+  padding: 15px 25px 15px 25px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #35323E;
+  z-index: 9999;
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 90%;
+  position: fixed;
+  left: 5%;
+  display: none;
+  -webkit-box-shadow: 0 0 400px 0 black;
+          box-shadow: 0 0 400px 0 black;
+}
+
+.mobile-menu li {
+  margin: 30px 0;
+}
+
+.mobile-menu li a {
+  color: white;
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+}
+
+.mobile-menu li a:hover {
+  color: #ab5ef6;
+  cursor: pointer;
+}
+
+.mobile-menu .bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.mobile-menu .bottom .cta-btn-mobile {
+  color: #ddbffb;
+  font-size: 22px;
+}
+
 footer {
   padding: 3.2rem 0;
   background-color: #efefef;
