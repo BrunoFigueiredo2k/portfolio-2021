@@ -23,6 +23,15 @@
     .col-8 {
         flex: 66%;
     }
+
+    .col,
+    .col-4,
+    .col-3,
+    .col-8 {
+        @include mobile {
+            flex-direction: column;
+        }
+    }
 }
 
 .text-center {

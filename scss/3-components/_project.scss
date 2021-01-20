@@ -55,8 +55,16 @@
     margin-right: -100px;
 }
 
+.container-btn {
+    padding-top: 40px;
+}
+
 .projects-container {
     padding: 40px;
+
+    @include mobile {
+        padding: 5px;
+    }
 
     .back-btn {
         border-radius: 5px;

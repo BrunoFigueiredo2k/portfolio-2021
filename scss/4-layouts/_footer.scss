@@ -9,6 +9,10 @@ footer {
     }
 
     .footer-socials {
+        @include mobile {
+            margin-bottom: 20px;
+        }
+
         li {
             margin-bottom: 30px;
         }

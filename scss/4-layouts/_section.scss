@@ -16,6 +16,14 @@ section {
     animation: gradient 110s ease infinite;
     @include backgroundImageCover('/images/bg-boost-desktop.svg');
 
+    .row {
+        display: table;
+
+        @include mobile {
+            display: inline-block;
+        }
+    }
+
     #col-left {
         display: table-cell;
         vertical-align: middle;
