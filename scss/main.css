@@ -237,6 +237,12 @@ h6 small {
   font-size: 45px;
 }
 
+@media (max-width: 1340px) {
+  .title-section {
+    font-size: 35px;
+  }
+}
+
 .title-section:after {
   content: "";
   display: block;
@@ -473,7 +479,24 @@ textarea:focus {
 
 .project-img {
   max-height: 350px;
-  border: 1px solid #e2e2e2;
+  -webkit-filter: brightness(100%);
+  -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.02);
+          box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.02);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+@media (max-width: 1340px) {
+  .project-img {
+    width: 100%;
+    margin: 30px 0 !important;
+  }
+}
+
+.project-img:hover {
+  -webkit-filter: brightness(75%);
+  -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.04);
+          box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.04);
 }
 
 .project-title {
@@ -508,6 +531,10 @@ textarea:focus {
 .project-links a:hover {
   cursor: pointer;
   color: #9994a8;
+}
+
+.project-content {
+  display: contents;
 }
 
 .right-content {
@@ -786,7 +813,6 @@ textarea:focus {
 .vertical-tabs li:hover {
   border-left: 5px solid #999999;
   color: #666666;
-  font-weight: 600;
 }
 
 @-webkit-keyframes fadeIn {
@@ -802,6 +828,12 @@ textarea:focus {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 1340px) {
+  #content-experience .tabcontent {
+    margin-top: 40px;
   }
 }
 
@@ -1092,7 +1124,7 @@ footer .footer-socials a:hover {
 }
 
 .sub-footer {
-  opacity: 0.9;
+  opacity: 0.95;
   background: url("https://url-shortening-api-git-master.brunofigueiredo2k.vercel.app/images/bg-boost-desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1124,6 +1156,7 @@ footer .footer-socials a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    display: block;
   }
 }
 

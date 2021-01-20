@@ -3,7 +3,23 @@
 
     &-img {
         max-height: 350px;
-        border: 1px solid rgb(226, 226, 226);
+        -webkit-filter: brightness(100%);
+        box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.02);
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        transition: all .5s ease;
+
+        @include mobile {
+            width: 100%;
+            margin: 30px 0 !important;
+        }
+
+        &:hover {
+            -webkit-filter: brightness(75%);
+            box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.04);
+        }
 
     }
 
@@ -34,6 +50,10 @@
             color: $black !important;
             @include hoverEffect($black, 40%, false, false);
         }
+    }
+
+    &-content {
+        display: contents;
     }
 }
 

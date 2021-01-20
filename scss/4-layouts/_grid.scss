@@ -5,6 +5,7 @@
 
     @include mobile {
         flex-direction: column;
+        display: block;
     }
 
     .col {

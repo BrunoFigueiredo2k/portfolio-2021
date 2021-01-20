@@ -132,7 +132,6 @@
         &:hover {
             border-left: 5px solid darken(#ccc, 20%);
             color: darken(#ccc, 40%);
-            font-weight: 600;
         }
     }
 }
@@ -150,5 +149,13 @@
         opacity: 1;
         -webkit-transform: translateY(0);
         transform: translateY(0);
+    }
+}
+
+#content-experience {
+    .tabcontent {
+        @include mobile {
+            margin-top: 40px;
+        }
     }
 }

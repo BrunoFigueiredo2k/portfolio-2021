@@ -50,6 +50,10 @@ h6 {
 .title-section {
     font-size: 45px;
 
+    @include mobile {
+        font-size: 35px;
+    }
+
     &:after {
         content: "";
         display: block;
