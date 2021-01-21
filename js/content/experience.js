@@ -85,7 +85,7 @@ const displayEducationDOM = () => {
 
     experienceData.map(item => {
         contentExperience.innerHTML += `
-            <div id="${item.elemId}" class="tabcontent">
+            <div id="${item.elemId}" class="tabcontent-vertical">
                 <h4 class="job-title">${item.role}</h4>
                 <p class="job-date">${item.date}</p>
                 <ul class="job-activities">

@@ -109,17 +109,17 @@
             <div class="row">
                 <div class="col-4">
                     <ul class="vertical-list vertical-tabs" data-aos="fade-right">
-                        <li class="tablinks active-vertical tablinks-vertical"
-                            onclick="clickTab(event, 'codeerschool', false)" id="codeerschool">De
+                        <li class="tablinks-vertical active-vertical" onclick="clickTab(event, 'codeerschool', false)"
+                            id="codeerschool">De
                             Codeerschool
                         </li>
-                        <li class="tablinks tablinks-vertical" onclick="clickTab(event, 'kbcreative', false)"
-                            id="kbcreative">KB Creative
+                        <li class="tablinks-vertical" onclick="clickTab(event, 'kbcreative', false)" id="kbcreative">KB
+                            Creative
                         </li>
-                        <li class="tablinks tablinks-vertical" onclick="clickTab(event, 'tsb', false)" id="tsb">The
+                        <li class="tablinks-vertical" onclick="clickTab(event, 'tsb', false)" id="tsb">The
                             Student Broker</li>
-                        <li class="tablinks tablinks-vertical" onclick="clickTab(event, 'gladwell', false)"
-                            id="gladwell">GladwellAcademy
+                        <li class="tablinks-vertical" onclick="clickTab(event, 'gladwell', false)" id="gladwell">
+                            GladwellAcademy
                         </li>
                     </ul>
                 </div>
@@ -170,27 +170,35 @@
         let i, tabcontent, tablinks;
 
         /** RESET STYLING **/
-        tabcontent = document.getElementsByClassName("tabcontent");
-        tablinks = document.getElementsByClassName("tablinks");
-
-        for (i = 0; i < tablinks.length; i++) {
-            tabcontent[i].style.display = "none";
-            // If the list is horizontal add horizontal active class else add vertical tabs active class
-            if (horizontal) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            } else {
-                tablinks[i].className = tablinks[i].className.replace(" active-vertical", "");
-            }
-
-            // Set display to block if the name passed is the same as the id of the element
-            if (tabcontent[i].id == name + "-content" || tabcontent[i].id == name) {
-                tabcontent[i].style.display = "block";
-            }
-        }
-
         if (horizontal) {
+            tabcontent = document.getElementsByClassName("tabcontent");
+            tablinks = document.getElementsByClassName("tablinks");
+
+            for (i = 0; i < tablinks.length; i++) {
+                tabcontent[i].style.display = "none";
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+
+                // Set display to block if the name passed is the same as the id of the element
+                if (tabcontent[i].id == name + "-content" || tabcontent[i].id == name) {
+                    tabcontent[i].style.display = "block";
+                }
+            }
+
             evt.currentTarget.className += " active";
         } else {
+            tabcontent = document.getElementsByClassName("tabcontent-vertical");
+            tablinks = document.getElementsByClassName("tablinks-vertical");
+
+            for (i = 0; i < tablinks.length; i++) {
+                tabcontent[i].style.display = "none";
+                tablinks[i].className = tablinks[i].className.replace(" active-vertical", "");
+
+                // Set display to block if the name passed is the same as the id of the element
+                if (tabcontent[i].id == name + "-content" || tabcontent[i].id == name) {
+                    tabcontent[i].style.display = "block";
+                }
+            }
+
             evt.currentTarget.className += " active-vertical";
         }
     }

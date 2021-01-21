@@ -533,8 +533,10 @@ textarea:focus {
   color: #9994a8;
 }
 
-.project-content {
-  display: contents;
+@media (max-width: 1340px) {
+  .project-content {
+    display: contents;
+  }
 }
 
 .right-content {
@@ -722,7 +724,8 @@ textarea:focus {
 }
 
 /* Style the tab content */
-.tabcontent {
+.tabcontent,
+.tabcontent-vertical {
   display: none;
   padding: 6px 0;
   border-top: none;
@@ -733,30 +736,42 @@ textarea:focus {
   animation: fadeIn 0.9s forwards;
 }
 
-.tabcontent .job-title {
+.tabcontent .job-title,
+.tabcontent-vertical .job-title {
   font-size: 26px;
   font-weight: 600;
   color: #3B0570;
 }
 
-.tabcontent .job-date {
+@media (max-width: 1340px) {
+  .tabcontent .job-title,
+  .tabcontent-vertical .job-title {
+    margin-top: 40px;
+  }
+}
+
+.tabcontent .job-date,
+.tabcontent-vertical .job-date {
   margin-top: 10px;
   color: #848486;
   font-size: 17px;
 }
 
-.tabcontent .job-activities {
+.tabcontent .job-activities,
+.tabcontent-vertical .job-activities {
   margin-bottom: 40px;
 }
 
-.tabcontent .job-activities li {
+.tabcontent .job-activities li,
+.tabcontent-vertical .job-activities li {
   margin: 10px 0 20px 0;
   position: relative;
   padding-left: 40px;
   font-size: 40px;
 }
 
-.tabcontent .job-activities li:before {
+.tabcontent .job-activities li:before,
+.tabcontent-vertical .job-activities li:before {
   content: "▹";
   color: #760ADF;
   position: absolute;
@@ -767,12 +782,14 @@ textarea:focus {
           filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
 }
 
-.tabcontent .job-activities li span {
+.tabcontent .job-activities li span,
+.tabcontent-vertical .job-activities li span {
   font-size: 18px;
   color: #35323E;
 }
 
-.tabcontent .job-tech {
+.tabcontent .job-tech,
+.tabcontent-vertical .job-tech {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 20px;

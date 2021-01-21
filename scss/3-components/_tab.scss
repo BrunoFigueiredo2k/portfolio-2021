@@ -42,7 +42,8 @@
 }
 
 /* Style the tab content */
-.tabcontent {
+.tabcontent,
+.tabcontent-vertical {
     display: none;
     padding: 6px 0;
     border-top: none;
@@ -56,6 +57,10 @@
         font-size: 26px;
         font-weight: 600;
         color: $dark-purple;
+
+        @include mobile {
+            margin-top: 40px;
+        }
     }
 
     .job-date {
