@@ -2,10 +2,27 @@ footer {
     padding: 3.2rem 0;
     background-color: darken($very-light-grey, 5%);
     text-align: center;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+
+    @include mobile {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
 
     p {
         color: $black;
         margin: 0;
+    }
+
+    .menu-footer {
+        @include mobile {
+            li {
+                display: block !important;
+                margin-top: 30px !important;
+            }
+        }
     }
 
     .footer-socials {

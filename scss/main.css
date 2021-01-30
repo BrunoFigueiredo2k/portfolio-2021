@@ -8,6 +8,7 @@
 .container {
   margin: 0 auto;
   width: 82%;
+  position: relative;
 }
 
 @media (max-width: 900px) {
@@ -407,7 +408,7 @@ textarea:focus {
 
 @media (max-width: 900px) {
   .vertical-list li {
-    margin: 0 10px !important;
+    margin: 0 10px;
   }
 }
 
@@ -448,6 +449,12 @@ textarea:focus {
 #contact-illustration {
   height: 400px;
   float: left;
+}
+
+@media (max-width: 900px) {
+  #contact-illustration {
+    margin-bottom: 25px;
+  }
 }
 
 .breadcrum {
@@ -1023,6 +1030,32 @@ textarea:focus {
   width: 80%;
 }
 
+.self-shape-lg {
+  background-color: #ab5ef6;
+  opacity: 0.07;
+  width: 130vw;
+  height: 500px;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+  top: 150px;
+  position: absolute;
+  left: -20px;
+  z-index: -200 !important;
+}
+
+.self-shape-sm {
+  background-color: #760ADF;
+  opacity: 0.04;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+  width: 130vw;
+  height: 300px;
+  top: 250px;
+  position: absolute;
+  left: -20px;
+  z-index: -200 !important;
+}
+
 /* Import all layouts .scss files */
 /* Header component */
 header {
@@ -1105,11 +1138,29 @@ footer {
   padding: 3.2rem 0;
   background-color: #efefef;
   text-align: center;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 900px) {
+  footer {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
 }
 
 footer p {
   color: #35323E;
   margin: 0;
+}
+
+@media (max-width: 900px) {
+  footer .menu-footer li {
+    display: block !important;
+    margin-top: 30px !important;
+  }
 }
 
 @media (max-width: 900px) {
@@ -1143,7 +1194,7 @@ footer .footer-socials a:hover {
 
 .sub-footer {
   opacity: 0.95;
-  background: url("https://url-shortening-api-git-master.brunofigueiredo2k.vercel.app/images/bg-boost-desktop.svg");
+  background-image: url("https://url-shortening-api-git-master.brunofigueiredo2k.vercel.app/images/bg-boost-desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 60%;
@@ -1236,7 +1287,7 @@ section {
   background-size: 400% 400%;
   -webkit-animation: gradient 110s ease infinite;
           animation: gradient 110s ease infinite;
-  background: url("/images/bg-boost-desktop.svg");
+  background-image: url("/images/bg-boost-desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 60%;
@@ -1255,5 +1306,9 @@ section {
 #landing-section #col-left {
   display: table-cell;
   vertical-align: middle;
+}
+
+#about {
+  position: relative;
 }
 /*# sourceMappingURL=main.css.map */

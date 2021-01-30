@@ -86,13 +86,13 @@
         @include hoverEffect($light-purple, 10%, true, false);
 
         @include mobile {
-            margin: 0 10px !important;
+            margin: 0 10px;
         }
     }
 }
 
 @mixin backgroundImageCover($img-url) {
-    background: url($img-url);
+    background-image: url($img-url);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 60%;
@@ -100,6 +100,7 @@
 
 .container {
     @include container(82%);
+    position: relative;
 
     @include mobile {
         @include container(95%);

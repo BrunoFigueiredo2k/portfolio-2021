@@ -13,4 +13,8 @@
 #contact-illustration {
     height: 400px;
     float: left;
+
+    @include mobile {
+        margin-bottom: 25px;
+    }
 }

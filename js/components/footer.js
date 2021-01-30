@@ -16,7 +16,7 @@ export default class Footer extends HTMLElement {
                 .replace(/AT/,'@')
                 .replace(/DOT/,'.')" class="fas fa-envelope"></a></li>
             </ul>
-            <ul class="horizontal-list">
+            <ul class="horizontal-list menu-footer">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
