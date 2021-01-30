@@ -457,6 +457,16 @@ textarea:focus {
   }
 }
 
+.img-company-logo {
+  border-radius: 50%;
+  float: right;
+  height: 75px;
+  width: 75px;
+  -webkit-box-shadow: 0 0 10px 5px #aa5ef610;
+          box-shadow: 0 0 10px 5px #aa5ef610;
+  border: 1px solid #ab5ef6;
+}
+
 .breadcrum {
   text-align: center;
   color: white;

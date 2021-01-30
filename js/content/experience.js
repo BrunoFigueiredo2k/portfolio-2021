@@ -5,6 +5,7 @@ const experienceData = [
         id: generateId(),
         elemId: "codeerschool-content",
         company: "De Codeerschool",
+        companyLogoUrl: 'https://irp-cdn.multiscreensite.com/fe569093/dms3rep/multi/logo.png',
         role: "Front-end Developer",
         date: "October 2020 - Now",
         roles: [
@@ -24,6 +25,7 @@ const experienceData = [
         id: generateId(),
         elemId: "kbcreative-content",
         company: "KB Creative",
+        companyLogoUrl: '/images/kbcreative-logo.jpg',
         role: "Owner",
         date: "October 2020 - Now",
         roles: [
@@ -41,6 +43,7 @@ const experienceData = [
         id: generateId(),
         elemId: "tsb-content",
         company: "The Student Broker",
+        companyLogoUrl: '/images/tsb-logo.png',
         role: "Front-end Developer",
         date: "April 2020 - Now",
         roles: [
@@ -63,6 +66,7 @@ const experienceData = [
         id: generateId(),
         elemId: "gladwell-content",
         company: "Gladwell Academy",
+        companyLogoUrl: 'https://www.gladwellacademy.com/wp-content/uploads/2019/06/Gladwell-Academy.jpg',
         role: "Jr. Webmaster",
         date: "February - June 2020",
         roles: [
@@ -86,7 +90,7 @@ const displayEducationDOM = () => {
     experienceData.map(item => {
         contentExperience.innerHTML += `
             <div id="${item.elemId}" class="tabcontent-vertical">
-                <h4 class="job-title">${item.role}</h4>
+                <h4 class="job-title">${item.role}<img src="${item.companyLogoUrl}" class="img-company-logo"></h4>
                 <p class="job-date">${item.date}</p>
                 <ul class="job-activities">
                     ${populateList(item, 'activities')}
