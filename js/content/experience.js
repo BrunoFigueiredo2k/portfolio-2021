@@ -10,14 +10,16 @@ const experienceData = [
         date: "October 2020 - Now",
         roles: [
             "Create front-end and functionality of several different projects based on designs provided.",
-            "Working with several different technologies depending on the project.",
+            "Creating custom fullstack applications and features in Wordpress.",
             "Think about design choices and create new designs if necessary (UI/UX)."
         ],
         tech: [
             "Java",
             "XML",
             "Android Studio",
-            "Adobe Xd"
+            "Adobe Xd",
+            "PHP",
+            "Wordpress"
         ],
         defaultOpen: true
     },
@@ -49,7 +51,7 @@ const experienceData = [
         roles: [
             "Built front-end of the main website where students can sign up and find all information and landlords can get in contact.",
             "Built admin panel where employees can view all necessary information concerning all the data.",
-            "Implemented analytics tools such as Google Analytics, Hotjar and Facebook pixel.",
+            "Implemented analytics tools such as Google Analytics and Hotjar",
             "Maintaining and improving website based on testing and user feedback by building new features."
         ],
         tech: [

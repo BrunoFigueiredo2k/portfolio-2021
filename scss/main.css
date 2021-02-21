@@ -460,11 +460,11 @@ textarea:focus {
 .img-company-logo {
   border-radius: 50%;
   float: right;
-  height: 75px;
-  width: 75px;
+  height: 65px;
+  width: 65px;
   -webkit-box-shadow: 0 0 10px 5px #aa5ef610;
           box-shadow: 0 0 10px 5px #aa5ef610;
-  border: 1px solid #ab5ef6;
+  border: 1px solid #35323E;
 }
 
 .breadcrum {
@@ -1150,8 +1150,8 @@ footer {
   text-align: center;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
-  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.12);
 }
 
 @media (max-width: 900px) {

@@ -29,12 +29,12 @@ const projects = [
     },
     {
         id: generateId(),
-        title: 'URL shortener',
-        description: "Landing page where you can shorten long urls. This is a challenge from Frontend Mentor to practice some layouts/SCSS and some Javascript.",
+        title: 'Frontend Mentor Challenges',
+        description: "This is a showcase of all the challenges I've done on the platform 'Frontend Mentor' to improve my layout skills.",
         technologies: ['Javascript', 'HTML/SCSS', 'API'],
-        linkGithub: 'https://github.com/BrunoFigueiredo2k/url-shortening-api',
-        linkWebsite: 'https://url-shortening-api-sepia.vercel.app/',
-        img: '/images/projects/url-shortening-api.jpg',
+        linkGithub: 'https://github.com/BrunoFigueiredo2k/frontendmentor_challenges_showcase',
+        linkWebsite: 'https://frontendmentor-challenges-showcase-brunofigueiredo2k.vercel.app/',
+        img: '/images/projects/frontend-mentor-challenges.jpg',
         directionContent: CLASS_RIGHT_CONTENT
     }
 ]
