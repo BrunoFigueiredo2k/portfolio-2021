@@ -597,6 +597,9 @@ textarea:focus {
   .projects-container {
     padding: 5px;
   }
+  .projects-container .title-section {
+    margin-top: 60px;
+  }
 }
 
 .projects-container .back-btn {
@@ -676,6 +679,24 @@ textarea:focus {
   border-radius: 20px;
   -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.07);
           box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.07);
+}
+
+@media (max-width: 900px) {
+  .prev-portolio {
+    margin: 40px 0;
+  }
+  .prev-portolio .left-img {
+    padding-right: 0 !important;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0 !important;
+  }
+  .prev-portolio .right-img {
+    padding-left: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
 }
 
 .prev-portolio .left-img {
