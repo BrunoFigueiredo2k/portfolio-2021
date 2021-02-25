@@ -22,11 +22,11 @@ let skillsData = [
                 tooltipText: 'React'
             },
             {
-                icon: '<img src="https://img.icons8.com/ios-filled/2x/jquery.png" alt="jquery" class="icon-skill-img"/>',
+                icon: '<img loading="lazy" src="https://img.icons8.com/ios-filled/2x/jquery.png" alt="jquery" class="icon-skill-img"/>',
                 tooltipText: 'jQuery'
             },
             {
-                icon: '<img src="../../images/bootstrap-fill.svg" alt="bootstrap" class="icon-skill-img"/>',
+                icon: '<img loading="lazy" src="../../images/bootstrap-fill.svg" alt="bootstrap" class="icon-skill-img"/>',
                 tooltipText: 'Bootstrap'
             },
         ]
@@ -38,11 +38,11 @@ let skillsData = [
                 tooltipText: 'PHP'
             },
             {
-                icon: '<img src="https://www.flaticon.com/svg/static/icons/svg/29/29165.svg" alt="SQL" class="icon-skill-img"/>',
+                icon: '<img loading="lazy" src="https://www.flaticon.com/svg/static/icons/svg/29/29165.svg" alt="SQL" class="icon-skill-img"/>',
                 tooltipText: 'SQL'
             },
             {
-                icon: '<img src="./images/icons/mysql.png" alt="MySQL" class="icon-skill-img"/>',
+                icon: '<img loading="lazy" src="./images/icons/mysql.png" alt="MySQL" class="icon-skill-img"/>',
                 tooltipText: 'MySQL'
             },
         ]
@@ -58,11 +58,11 @@ let skillsData = [
                 tooltipText: 'Python'
             },
             {
-                icon: '<img src="./images/icons/java.png" alt="Java" class="icon-skill-img"/>',
+                icon: '<img loading="lazy" src="./images/icons/java.png" alt="Java" class="icon-skill-img"/>',
                 tooltipText: 'Java'
             },
             {
-                icon: '<img src="./images/icons/kotlin.png" alt="Kotlin" class="icon-skill-img"/>',
+                icon: '<img loading="lazy" src="./images/icons/kotlin.png" alt="Kotlin" class="icon-skill-img"/>',
                 tooltipText: 'Kotlin'
             },
             {
@@ -70,11 +70,11 @@ let skillsData = [
                 tooltipText: 'Android Studio'
             },
             {
-                icon: '<img src="./images/icons/scrum.png" alt="Scrum" class="icon-skill-img"/>',
+                icon: '<img loading="lazy" src="./images/icons/scrum.png" alt="Scrum" class="icon-skill-img"/>',
                 tooltipText: 'Scrum'
             },
             {
-                icon: '<img src="./images/icons/vscode.png" alt="vscode" class="icon-skill-img"/>',
+                icon: '<img loading="lazy" src="./images/icons/vscode.png" alt="vscode" class="icon-skill-img"/>',
                 tooltipText: 'VS Code'
             },
             {

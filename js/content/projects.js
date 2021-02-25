@@ -49,7 +49,7 @@ const displayProjectsDOM = () => {
 
             const columnImg = `
                 <div class="col" data-aos="zoom-in-right" data-aos-duration="1000">
-                    <a href="${element.linkWebsite}"><img src="${element.img}" alt="${element.title}" class="project-img"></a>
+                    <a href="${element.linkWebsite}"><img loading="lazy" src="${element.img}" alt="${element.title}" class="project-img"></a>
                 </div>
             `;
 
@@ -132,7 +132,7 @@ const displayProjectsPage = () => {
         row.innerHTML += `
         <div class="project col-4" data-aos="zoom-in-up">
             <div class="content">
-                <img src="${project.img}"/>
+                <img loading="lazy" src="${project.img}"/>
                 <div class="bottom">
                     <h2 class="title">${project.title} <a href="${project.linkWebsite}" target="_blank" rel="noreferrer">
                         <i class="fas fa-external-link-alt sm-icon"></i></a></h2>

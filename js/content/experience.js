@@ -92,7 +92,7 @@ const displayEducationDOM = () => {
     experienceData.map(item => {
         contentExperience.innerHTML += `
             <div id="${item.elemId}" class="tabcontent-vertical">
-                <h4 class="job-title">${item.role}<img src="${item.companyLogoUrl}" class="img-company-logo"></h4>
+                <h4 class="job-title">${item.role}<img loading="lazy" src="${item.companyLogoUrl}" class="img-company-logo"></h4>
                 <p class="job-date">${item.date}</p>
                 <ul class="job-activities">
                     ${populateList(item, 'activities')}
