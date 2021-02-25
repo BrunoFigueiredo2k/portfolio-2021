@@ -1,2 +1,2 @@
 RewriteEngine on
-RewriteRule ^$ https://bruno-figueiredo.nl/index.html [R=301,L]
+Redirect 301 / https://bruno-figueiredo.nl/index.html
