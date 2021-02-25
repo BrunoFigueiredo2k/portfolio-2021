@@ -1,6 +1,10 @@
 #illustration-landing {
     height: 500px;
     float: right;
+
+    @include mobile {
+        height: 350px;
+    }
 }
 
 #self-img {
@@ -8,6 +12,11 @@
     border: 10px double $black;
     box-shadow: $box-shadow-light;
     border-radius: 50%;
+
+    @include mobile {
+        height: 280px;
+        margin-bottom: 20px;
+    }
 }
 
 #contact-illustration {

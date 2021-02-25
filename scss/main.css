@@ -438,12 +438,25 @@ textarea:focus {
   float: right;
 }
 
+@media (max-width: 900px) {
+  #illustration-landing {
+    height: 350px;
+  }
+}
+
 #self-img {
   height: 300px;
   border: 10px double #35323E;
   -webkit-box-shadow: 0 0 10px 5px #aa5ef610;
           box-shadow: 0 0 10px 5px #aa5ef610;
   border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+  #self-img {
+    height: 280px;
+    margin-bottom: 20px;
+  }
 }
 
 #contact-illustration {
