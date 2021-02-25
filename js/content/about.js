@@ -42,7 +42,7 @@ let skillsData = [
                 tooltipText: 'SQL'
             },
             {
-                icon: '<img src="http://bruno-figueiredo.nl/img/icons-light-theme/mysql.png" alt="MySQL" class="icon-skill-img"/>',
+                icon: '<img src="./images/icons/mysql.png" alt="MySQL" class="icon-skill-img"/>',
                 tooltipText: 'MySQL'
             },
         ]
@@ -58,11 +58,11 @@ let skillsData = [
                 tooltipText: 'Python'
             },
             {
-                icon: '<img src="http://bruno-figueiredo.nl/img/icons-light-theme/java.png" alt="Java" class="icon-skill-img"/>',
+                icon: '<img src="./images/icons/java.png" alt="Java" class="icon-skill-img"/>',
                 tooltipText: 'Java'
             },
             {
-                icon: '<img src="http://bruno-figueiredo.nl/img/icons-light-theme/kotlin.png" alt="Kotlin" class="icon-skill-img"/>',
+                icon: '<img src="./images/icons/kotlin.png" alt="Kotlin" class="icon-skill-img"/>',
                 tooltipText: 'Kotlin'
             },
             {
@@ -70,11 +70,11 @@ let skillsData = [
                 tooltipText: 'Android Studio'
             },
             {
-                icon: '<img src="http://bruno-figueiredo.nl/img/icons-light-theme/scrum.png" alt="Scrum" class="icon-skill-img"/>',
+                icon: '<img src="./images/icons/scrum.png" alt="Scrum" class="icon-skill-img"/>',
                 tooltipText: 'Scrum'
             },
             {
-                icon: '<img src="http://bruno-figueiredo.nl/img/icons-light-theme/vscode.png" alt="vscode" class="icon-skill-img"/>',
+                icon: '<img src="./images/icons/vscode.png" alt="vscode" class="icon-skill-img"/>',
                 tooltipText: 'VS Code'
             },
             {
