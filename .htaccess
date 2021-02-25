@@ -1,1 +1,2 @@
-RedirectMatch ^/$ /index.html
+RewriteEngine On
+RewriteRule ^$ /index.html [L]
