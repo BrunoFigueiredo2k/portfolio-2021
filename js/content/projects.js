@@ -23,7 +23,7 @@ const projects = [
         description: "Webdesign & development agency I'm the co-owner of. At KB Creative I'm a front-end developer working closely together with another back-end developer building fullstack web applications",
         technologies: ['Javascript', 'HTML/CSS'],
         linkGithub: 'https://github.com/BrunoFigueiredo2k/KB-Creative',
-        linkWebsite: 'https://thestudentbroker.com/pages/index.php',
+        linkWebsite: 'https://kbcreative.nl/pages/index.html',
         img: '/images/projects/project-kbcreative.jpg',
         directionContent: CLASS_LEFT_CONTENT
     },
@@ -49,7 +49,8 @@ const displayProjectsDOM = () => {
 
             const columnImg = `
                 <div class="col" data-aos="zoom-in-right" data-aos-duration="1000">
-                    <a href="${element.linkWebsite}"><img loading="lazy" src="${element.img}" alt="${element.title}" class="project-img"></a>
+                    <a href="${element.linkWebsite}" target="_blank"
+                    rel="noreferrer"><img loading="lazy" src="${element.img}" alt="${element.title}" class="project-img"></a>
                 </div>
             `;
 
