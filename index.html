@@ -18,6 +18,13 @@
     <title>Bruno Figueiredo | Front-end Developer | Portfolio</title>
 </head>
 
+<!-- Redirect site to index.html -->
+<script>
+    if (!window.location.href.includes("index.html")) {
+        window.location.replace("index.html");
+    }
+</script>
+
 <body>
     <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
@@ -168,9 +175,6 @@
 </body>
 
 <script>
-    if (!window.location.href.includes("index.html")) {
-        window.location.replace = "https://bruno-figueiredo.nl/index.html";
-    }
     // When the user scrolls the page, execute myFunction
     window.onscroll = function () { myFunction() };
 
