@@ -168,6 +168,9 @@
 </body>
 
 <script>
+    if (!String(window.location.href).includes("index.html")) {
+        window.location.replace = "https://bruno-figueiredo.nl/index.html";
+    }
     // When the user scrolls the page, execute myFunction
     window.onscroll = function () { myFunction() };
 
