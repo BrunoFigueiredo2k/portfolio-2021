@@ -11,9 +11,9 @@ const projects = [
         id: generateId(),
         title: 'The Student Broker',
         description: "Website where (international) students can sign up and search for student housing in the Netherlands. The website contains all information students and landlords need to know about our service.",
-        technologies: ['Javascript', 'HTML/CSS', 'PHP', 'jQuery', 'Bootstrap'],
+        technologies: ['Javascript', 'HTML/CSS', 'PHP', 'SQL', 'jQuery', 'Bootstrap'],
         linkGithub: null,
-        linkWebsite: 'https://thestudentbroker.com/pages/index.php',
+        linkWebsite: 'https://edzijlstra.nl/thestudentbroker/pages/index.php',
         img: '/images/projects/project-tsb.jpg',
         directionContent: CLASS_RIGHT_CONTENT
     },
