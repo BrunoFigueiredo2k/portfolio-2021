@@ -1,5 +1,6 @@
 /* Place all button components styling here */
 .cta-btn,
+.cta-btn-fill,
 .cta-btn-uppercase {
     color: $black !important;
     background: transparent;
@@ -20,6 +21,11 @@
         color: white !important;
         cursor: pointer;
     }
+}
+
+.cta-btn-fill {
+    background-color: $black;
+    color: white !important;
 }
 
 .cta-btn-uppercase {

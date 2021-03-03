@@ -273,6 +273,7 @@ p {
 /* Import all components .scss files */
 /* Place all button components styling here */
 .cta-btn,
+.cta-btn-fill,
 .cta-btn-uppercase {
   color: #35323E !important;
   background: transparent;
@@ -290,12 +291,18 @@ p {
 }
 
 .cta-btn:hover,
+.cta-btn-fill:hover,
 .cta-btn-uppercase:hover {
   -webkit-box-shadow: 0 3px 10px 7px #3a057007;
           box-shadow: 0 3px 10px 7px #3a057007;
   background-color: #35323E;
   color: white !important;
   cursor: pointer;
+}
+
+.cta-btn-fill {
+  background-color: #35323E;
+  color: white !important;
 }
 
 .cta-btn-uppercase {
