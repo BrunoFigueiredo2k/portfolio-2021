@@ -763,7 +763,7 @@ textarea:focus {
   content: "";
   display: block;
   border-bottom: 4px solid #ab5ef6;
-  width: 30px;
+  width: 20px;
   position: relative;
   bottom: -5px;
 }
