@@ -5,7 +5,7 @@ import { displayProjectsDOM, displayProjectsPage } from './content/projects.js';
 import { populateSkills, populateEducation } from './content/about.js';
 import { displayEducationDOM } from './content/experience.js';
 
-/** GOOGLE ANALYTICS */
+/** THINGS TO ADD TO HEAD */
 document.getElementsByTagName('head')[0].innerHTML += `
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GRE6WN1W8Y"></script>
@@ -92,16 +92,12 @@ AOS.init({
 });
 
 /* Mobile menu */
-const CLOSE_ICON = `&#x2715;`;
-const HAMBURGER_ICON = `&#x2630;`;
 const mobileMenu = document.querySelector('#mobile-menu-li');
-
 const mobileBtn = document.querySelector('#mobile-btn');
-var btnTxt = document.getElementById('mobile-btn').innerText;
 
 // Click listener hamburger menu btn
 mobileBtn.addEventListener('click', () => {
-  if (btnTxt == HAMBURGER_ICON) {
+  if (!mobileBtn.classList.contains('is-active')) {
     mobileMenuActive(true);
     mobileMenu.style.display = 'inline-block';
 
@@ -124,10 +120,8 @@ mobileBtn.addEventListener('click', () => {
 // Toggle source of mobile menu image btn
 function mobileMenuActive(active) {
   if (active) {
-    btnTxt = CLOSE_ICON;
-    mobileBtn.innerHTML = CLOSE_ICON;
+    mobileBtn.classList.add('is-active');
   } else {
-    btnTxt = HAMBURGER_ICON;
-    mobileBtn.innerHTML = HAMBURGER_ICON;
+    mobileBtn.classList.remove('is-active');
   }
 }

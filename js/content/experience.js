@@ -47,7 +47,7 @@ const experienceData = [
         company: "The Student Broker",
         companyLogoUrl: '/images/tsb-logo.png',
         role: "Front-end Developer",
-        date: "April 2020 - Now",
+        date: "April 2020 - March 2021",
         roles: [
             "Built front-end of the main website where students can sign up and find all information and landlords can get in contact.",
             "Built admin panel where employees can view all necessary information concerning all the data.",

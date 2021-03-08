@@ -16,7 +16,11 @@ export default class Header extends HTMLElement {
             </ul>
           </nav>
           <div class="right" id="mobile-right">
-            <span id="mobile-btn">&#x2630;</span>
+          <button class="hamburger hamburger--collapse" type="button" id="mobile-btn">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
           </div>
         </header>
         
