@@ -1,9 +1,22 @@
 /* General imports */
 import Header from './components/header.js';
 import Footer from './components/footer.js';
-import {displayProjectsDOM, displayProjectsPage} from './content/projects.js';
+import { displayProjectsDOM, displayProjectsPage } from './content/projects.js';
 import { populateSkills, populateEducation } from './content/about.js';
-import {displayEducationDOM} from './content/experience.js';
+import { displayEducationDOM } from './content/experience.js';
+
+/** GOOGLE ANALYTICS */
+document.getElementsByTagName('head')[0].innerHTML += `
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GRE6WN1W8Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-GRE6WN1W8Y');
+  </script>
+`;
 
 const populateDOM = () => {
   displayProjectsDOM();
@@ -12,16 +25,16 @@ const populateDOM = () => {
   displayEducationDOM();
 }
 
-if (document.URL.includes("index") ) {
+if (document.URL.includes("index")) {
   populateDOM();
-} else if (document.URL.includes("projects")){
+} else if (document.URL.includes("projects")) {
   displayProjectsPage();
 }
 
 // Scroll animation
-$(document).ready(function(){
+$(document).ready(function () {
   // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+  $("a").on('click', function (event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
@@ -35,7 +48,7 @@ $(document).ready(function(){
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 900, function(){
+      }, 900, function () {
 
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
@@ -50,7 +63,7 @@ var rootElement = document.documentElement
 function handleScroll() {
   // Do something on scroll
   var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
-  if ((rootElement.scrollTop / scrollTotal ) > 0.10) {
+  if ((rootElement.scrollTop / scrollTotal) > 0.10) {
     scrollToTopBtn.classList.add("showBtn")
   } else {
     scrollToTopBtn.classList.remove("showBtn")
@@ -70,12 +83,12 @@ document.addEventListener("scroll", handleScroll)
 AOS.init();
 
 AOS.init({
-    offset: 0, // offset (in px) from the original trigger point
-    delay: 200, // values from 0 to 3000, with step 50ms
-    duration: 900, // values from 0 to 3000, with step 50ms
-    easing: 'ease', // default easing for AOS animations
-    once: true, // whether animation should happen only once - while scrolling down
-    mirror: false, // whether elements should animate out while scrolling past them
+  offset: 0, // offset (in px) from the original trigger point
+  delay: 200, // values from 0 to 3000, with step 50ms
+  duration: 900, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: true, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
 });
 
 /* Mobile menu */
@@ -88,33 +101,33 @@ var btnTxt = document.getElementById('mobile-btn').innerText;
 
 // Click listener hamburger menu btn
 mobileBtn.addEventListener('click', () => {
-    if (btnTxt == HAMBURGER_ICON){
-        mobileMenuActive(true);
-        mobileMenu.style.display = 'inline-block';
+  if (btnTxt == HAMBURGER_ICON) {
+    mobileMenuActive(true);
+    mobileMenu.style.display = 'inline-block';
 
-        // Onclick outside hide again
-        event.stopPropagation();
-        window.onclick = function(e) {
-            if(e.target != mobileMenu) {
-                mobileMenuActive(false);
-                mobileMenu.style.display = 'none';
-            } else {
-                mobileMenu.style.display = 'inline-block';
-            }
-        }    
-    } else {
+    // Onclick outside hide again
+    event.stopPropagation();
+    window.onclick = function (e) {
+      if (e.target != mobileMenu) {
         mobileMenuActive(false);
         mobileMenu.style.display = 'none';
+      } else {
+        mobileMenu.style.display = 'inline-block';
+      }
     }
+  } else {
+    mobileMenuActive(false);
+    mobileMenu.style.display = 'none';
+  }
 });
 
 // Toggle source of mobile menu image btn
-function mobileMenuActive(active){
-    if (active){
-        btnTxt = CLOSE_ICON;
-        mobileBtn.innerHTML = CLOSE_ICON;
-    } else {
-        btnTxt = HAMBURGER_ICON;
-        mobileBtn.innerHTML = HAMBURGER_ICON;
-    }
+function mobileMenuActive(active) {
+  if (active) {
+    btnTxt = CLOSE_ICON;
+    mobileBtn.innerHTML = CLOSE_ICON;
+  } else {
+    btnTxt = HAMBURGER_ICON;
+    mobileBtn.innerHTML = HAMBURGER_ICON;
+  }
 }
