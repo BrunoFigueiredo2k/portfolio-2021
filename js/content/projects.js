@@ -107,7 +107,7 @@ const projectsAll = [
         title: "Men Spa / Barbershop",
         description: "Male barbershop/spa that displays the shop's information about service and costs.",
         img: "../../images/projects/barbershop.jpg",
-        linkWebsite: "http://bruno-figueiredo.nl/Portfolio/Men%20Spa/index.html"
+        linkWebsite: "https://men-spa.vercel.app/"
     },
     {
         title: "Easybank",
@@ -119,7 +119,7 @@ const projectsAll = [
         title: "Coffee Shop",
         description: "Simple landing page challenge from Frontend Mentor to practice some layouts and SCSS.",
         img: "../../images/projects/project-coffee.jpg",
-        linkWebsite: "http://bruno-figueiredo.nl/Portfolio/coffee-landing-page/index.html"
+        linkWebsite: "https://coffee-shop-tau.vercel.app/"
     }
 ]
 

@@ -27,7 +27,7 @@ export default class Footer extends HTMLElement {
         </footer>
         <div class="sub-footer">
             <div class="container">
-            <p>Bruno Monteiro Figueiredo | All Rights Reserved</p>
+            <p>Bruno Figueiredo | Portfolio 2021</p>
             </div>
         </div>
       `;

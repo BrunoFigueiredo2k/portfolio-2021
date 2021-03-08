@@ -1,10 +1,10 @@
 footer {
     padding: 3.2rem 0;
-    background-color: darken($very-light-grey, 5%);
     text-align: center;
+    background-color: #faf6ff;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
-    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.06);
 
     @include mobile {
         border-top-left-radius: 50px;
@@ -56,15 +56,16 @@ footer {
 
 .sub-footer {
     opacity: 0.95;
-    @include backgroundImageCover('https://url-shortening-api-git-master.brunofigueiredo2k.vercel.app/images/bg-boost-desktop.svg');
-    background-color: $black;
+    background-color: #f4f0f8;
     text-align: center;
     margin: 0;
     padding: 1.5rem 0;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.08);
 
     p {
         font-size: 16px;
-        color: white !important;
+        color: $black;
+        font-weight: 600;
         margin: 0;
     }
 }
