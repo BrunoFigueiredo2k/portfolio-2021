@@ -402,6 +402,15 @@ textarea:focus {
   list-style: none;
 }
 
+@media (max-width: 900px) {
+  .vertical-list {
+    overflow-x: scroll;
+  }
+  .vertical-list li {
+    display: table-cell;
+  }
+}
+
 .vertical-list li {
   margin: 10px 0;
   -webkit-transition: 200ms ease;
@@ -884,6 +893,15 @@ textarea:focus {
   font-weight: 500;
   font-size: 18px;
   margin-left: 20px;
+}
+
+@media (max-width: 900px) {
+  .vertical-tabs li {
+    padding: 10px;
+    border-left: none !important;
+    margin: 0 20px 0 0;
+    padding: 30px;
+  }
 }
 
 .vertical-tabs li:hover {

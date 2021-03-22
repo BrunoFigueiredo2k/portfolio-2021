@@ -3,6 +3,24 @@ import {generateId} from '../content/projects.js'
 const experienceData = [
     {
         id: generateId(),
+        elemId: "plantenpasser-content",
+        company: "plantenpasser.nl",
+        companyLogoUrl: '/images/plantenpasser-icon.png',
+        role: "Developer",
+        date: "March 2021 - Now",
+        roles: [
+            "Creating main Wordpress ecommerce webshop and custom plugins.",
+            "Maintaining main site front and backend and IT support.",
+        ],
+        tech: [
+            "Javascript",
+            "PHP",
+            "Wordpress"
+        ],
+        defaultOpen: true
+    },
+    {
+        id: generateId(),
         elemId: "codeerschool-content",
         company: "De Codeerschool",
         companyLogoUrl: 'https://irp-cdn.multiscreensite.com/fe569093/dms3rep/multi/logo.png',
@@ -21,7 +39,7 @@ const experienceData = [
             "PHP",
             "Wordpress"
         ],
-        defaultOpen: true
+        defaultOpen: false
     },
     {
         id: generateId(),
