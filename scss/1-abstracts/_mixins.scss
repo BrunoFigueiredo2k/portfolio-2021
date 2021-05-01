@@ -79,14 +79,6 @@
 @mixin vertical-list {
     @include reset-list;
 
-    @include mobile {
-        overflow-x: scroll;
-
-        li {
-            display: table-cell;
-        }
-    }
-
     li {
         margin: 10px 0;
 

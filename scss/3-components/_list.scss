@@ -6,6 +6,17 @@
     @include vertical-list;
 }
 
+/** Vertical list of experience tab **/
+#tabs-experience {
+    @include mobile {
+        overflow-x: scroll;
+
+        li {
+            display: table-cell;
+        }
+    }
+}
+
 .socials-links {
     margin-top: 40px;
     font-size: 40px;

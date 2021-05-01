@@ -282,7 +282,7 @@ p {
   font-size: 16px;
   padding: 12px 25px;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 18px;
   border: 2px solid #35323E;
   -webkit-transition: 0.3s ease-in !important;
   transition: 0.3s ease-in !important;
@@ -402,15 +402,6 @@ textarea:focus {
   list-style: none;
 }
 
-@media (max-width: 900px) {
-  .vertical-list {
-    overflow-x: scroll;
-  }
-  .vertical-list li {
-    display: table-cell;
-  }
-}
-
 .vertical-list li {
   margin: 10px 0;
   -webkit-transition: 200ms ease;
@@ -425,6 +416,16 @@ textarea:focus {
 @media (max-width: 900px) {
   .vertical-list li {
     margin: 0 10px;
+  }
+}
+
+/** Vertical list of experience tab **/
+@media (max-width: 900px) {
+  #tabs-experience {
+    overflow-x: scroll;
+  }
+  #tabs-experience li {
+    display: table-cell;
   }
 }
 
@@ -762,6 +763,13 @@ textarea:focus {
   transition: 0.3s;
   font-size: 18px;
   font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .tab button {
+    font-size: 14px;
+    padding: 14px 20px 14px 0;
+  }
 }
 
 .tab button:hover {
