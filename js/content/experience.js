@@ -10,8 +10,8 @@ const experienceData = [
 		date: 'October 2020 - Now',
 		roles: [
 			'Create front-end and functionality of several different projects based on designs provided.',
-			'Creating custom fullstack applications and features in Wordpress.',
-			'Think about design choices and create new designs if necessary (UI/UX).'
+			'Creating custom fullstack applications in Wordpress.',
+			'IT support and bug fixing Wordpress websites.'
 		],
 		tech: [ 'Java', 'Android Studio', 'Adobe Xd', 'PHP', 'Wordpress', 'HTML/CSS', 'Javascript', 'jQuery' ]
 	},
