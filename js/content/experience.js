@@ -4,9 +4,9 @@ const experienceData = [
 	{
 		id: generateId(),
 		elemId: 'codeerschool-content',
-		company: 'De Codeerschool',
+		company: 'Hét Codeerbedrijf',
 		companyLogoUrl: 'https://irp-cdn.multiscreensite.com/fe569093/dms3rep/multi/logo.png',
-		role: 'Front-end Developer',
+		role: 'Developer',
 		date: 'October 2020 - Now',
 		roles: [
 			'Create front-end and functionality of several different projects based on designs provided.',
