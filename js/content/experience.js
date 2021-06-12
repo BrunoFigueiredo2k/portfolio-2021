@@ -13,7 +13,7 @@ const experienceData = [
 			'Creating custom fullstack applications and features in Wordpress.',
 			'Think about design choices and create new designs if necessary (UI/UX).'
 		],
-		tech: [ 'Java', 'XML', 'Android Studio', 'Adobe Xd', 'PHP', 'Wordpress' ]
+		tech: [ 'Java', 'XML', 'Android Studio', 'Adobe Xd', 'PHP', 'Wordpress', 'HTML/CSS', 'Javascript' ]
 	},
 	{
 		id: generateId(),
@@ -41,7 +41,7 @@ const experienceData = [
 			'Implemented analytics tools such as Google Analytics and Hotjar',
 			'Maintaining and improving website based on testing and user feedback by building new features.'
 		],
-		tech: [ 'HTML', 'CSS', 'Javascript', 'jQuery', 'Bootstrap', 'PHP' ]
+		tech: [ 'HTML/CSS', 'Javascript', 'Javascript', 'jQuery', 'Bootstrap', 'PHP' ]
 	},
 	{
 		id: generateId(),
@@ -55,7 +55,7 @@ const experienceData = [
 			"Researched what could've been done in order to improve the user experience and conversion rate.",
 			'Improved SEO/performance and analysed trends based on data from tools such as Google Analytics and Hotjar to improve the conversion rates.'
 		],
-		tech: [ 'Wordpress', 'HTML', 'CSS', 'Python' ]
+		tech: [ 'Wordpress', 'HTML/CSS', 'Javascript', 'Python' ]
 	}
 ];
 
