@@ -13,7 +13,7 @@ const experienceData = [
 			'Creating custom fullstack applications and features in Wordpress.',
 			'Think about design choices and create new designs if necessary (UI/UX).'
 		],
-		tech: [ 'Java', 'XML', 'Android Studio', 'Adobe Xd', 'PHP', 'Wordpress', 'HTML/CSS', 'Javascript' ]
+		tech: [ 'Java', 'Android Studio', 'Adobe Xd', 'PHP', 'Wordpress', 'HTML/CSS', 'Javascript', 'jQuery' ]
 	},
 	{
 		id: generateId(),
