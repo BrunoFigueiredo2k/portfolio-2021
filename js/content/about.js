@@ -23,12 +23,17 @@ let skillsData = [
 			},
 			{
 				icon:
-					'<img loading="lazy" src="https://img.icons8.com/ios-filled/2x/jquery.png" alt="jquery" class="icon-skill-img"/>',
+					'<img loading="lazy" src="../../images/icons/next-js.svg" alt="next.js logo" class="icon-skill-img"/>',
+				tooltipText: 'Next.js'
+			},
+			{
+				icon:
+					'<img loading="lazy" src="https://img.icons8.com/ios-filled/2x/jquery.png" alt="jquery logo" class="icon-skill-img"/>',
 				tooltipText: 'jQuery'
 			},
 			{
 				icon:
-					'<img loading="lazy" src="../../images/bootstrap-fill.svg" alt="bootstrap" class="icon-skill-img"/>',
+					'<img loading="lazy" src="../../images/bootstrap-fill.svg" alt="bootstrap logo" class="icon-skill-img"/>',
 				tooltipText: 'Bootstrap'
 			}
 		]
