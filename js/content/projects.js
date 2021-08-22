@@ -31,13 +31,13 @@ const projects = [
 	},
 	{
 		id: generateId(),
-		title: 'Frontend Mentor Challenges',
+		title: 'FLKS.nl',
 		description:
-			"This is a showcase of all the challenges I've done on the platform 'Frontend Mentor' to improve my layout skills.",
-		technologies: [ 'Javascript', 'HTML/SCSS', 'API' ],
-		linkGithub: 'https://github.com/BrunoFigueiredo2k/frontendmentor_challenges_showcase',
-		linkWebsite: 'https://frontendmentor-challenges-showcase-brunofigueiredo2k.vercel.app/',
-		img: '/images/projects/frontend-mentor-challenges.jpg',
+			'Website for health insurance company called flks. I built the whole website myself for Het Codeerbedrijf where I worked on both the frontend and backend.',
+		technologies: [ 'Next.js', 'HTML/CSS', 'Laravel' ],
+		linkGithub: '',
+		linkWebsite: 'https://flks.nl/',
+		img: '/images/projects/flks_website.jpg',
 		directionContent: CLASS_RIGHT_CONTENT
 	}
 ];
@@ -120,10 +120,10 @@ const projectsAll = [
 		linkWebsite: 'https://easybank-landing-page.brunofigueiredo2k.vercel.app/'
 	},
 	{
-		title: 'Coffee Shop',
-		description: 'Simple landing page challenge from Frontend Mentor to practice some layouts and SCSS.',
-		img: '../../images/projects/project-coffee.jpg',
-		linkWebsite: 'https://coffee-shop-tau.vercel.app/'
+		title: 'Nono Cakes',
+		description: 'Wordpress website build for company called Nono Cakes.',
+		img: '../../images/projects/nonocakes_website.jpg',
+		linkWebsite: 'https://www.nonocakes.com/'
 	}
 ];
 
