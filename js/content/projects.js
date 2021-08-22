@@ -35,7 +35,7 @@ const projects = [
 		description:
 			'Website for health insurance company called flks. I built the whole website myself for Het Codeerbedrijf where I worked on both the frontend and backend.',
 		technologies: [ 'Next.js', 'HTML/CSS', 'Laravel' ],
-		linkGithub: '',
+		linkGithub: null,
 		linkWebsite: 'https://flks.nl/',
 		img: '/images/projects/flks_website.jpg',
 		directionContent: CLASS_RIGHT_CONTENT
