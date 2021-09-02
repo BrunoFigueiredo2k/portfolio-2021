@@ -45,8 +45,7 @@ let skillsData = [
 				tooltipText: 'PHP'
 			},
 			{
-				icon:
-					'<img loading="lazy" src="https://www.flaticon.com/svg/static/icons/svg/29/29165.svg" alt="SQL" class="icon-skill-img"/>',
+				icon: '<img loading="lazy" src="./images/icons/sql.png" alt="SQL" class="icon-skill-img"/>',
 				tooltipText: 'SQL'
 			},
 			{
