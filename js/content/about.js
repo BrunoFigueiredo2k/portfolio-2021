@@ -73,6 +73,10 @@ let skillsData = [
 				tooltipText: 'Kotlin'
 			},
 			{
+				icon: '<i class="fab fa-swift"></i>',
+				tooltipText: 'Swift'
+			},
+			{
 				icon: '<i class="fab fa-android"></i>',
 				tooltipText: 'Android Studio'
 			},
