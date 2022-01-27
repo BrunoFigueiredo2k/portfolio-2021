@@ -13,7 +13,7 @@ const experienceData = [
 			'Creating custom fullstack applications.',
 			'IT support, bug fixing and creating Wordpress websites.'
 		],
-		tech: [ 'Java', 'Android Studio', 'React', 'PHP', 'Wordpress', 'HTML/CSS', 'Javascript', 'jQuery' ]
+		tech: [ 'Java', 'React', 'PHP', 'Wordpress', 'HTML/CSS', 'Javascript', 'jQuery', 'Next.js' ]
 	},
 	{
 		id: generateId(),
