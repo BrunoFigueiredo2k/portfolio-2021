@@ -20,6 +20,28 @@ const projects = [
 	},
 	{
 		id: generateId(),
+		title: 'FLKS.nl',
+		description:
+			'Website for health insurance company called FLKS. I built the website for while working at Het Codeerbedrijf.',
+		technologies: [ 'Next.js', 'HTML/CSS' ],
+		linkGithub: null,
+		linkWebsite: 'https://flks.nl/',
+		img: '/images/projects/flks_website.jpg',
+		directionContent: CLASS_LEFT_CONTENT
+	},
+	{
+		id: generateId(),
+		title: 'Opzeggenbij.nl',
+		description:
+			'Website where people can generate letters for canceling subscriptions for certain companies. I built the website for while working at Het Codeerbedrijf.',
+		technologies: [ 'Wordpress', 'PHP', 'Javascript', 'HTML/CSS' ],
+		linkGithub: null,
+		linkWebsite: 'https://opzeggenbij.nl/',
+		img: '/images/projects/opzeggenbij.jpg',
+		directionContent: CLASS_RIGHT_CONTENT
+	},
+	{
+		id: generateId(),
 		title: 'KB Creative',
 		description:
 			"Webdesign & development agency I'm the co-owner of. At KB Creative I'm a front-end developer working closely together with another back-end developer building fullstack web applications",
@@ -28,17 +50,6 @@ const projects = [
 		linkWebsite: 'https://kbcreative.nl/pages/index.html',
 		img: '/images/projects/project-kbcreative.jpg',
 		directionContent: CLASS_LEFT_CONTENT
-	},
-	{
-		id: generateId(),
-		title: 'FLKS.nl',
-		description:
-			'Website for health insurance company called flks. I built the whole website myself for Het Codeerbedrijf where I worked on both the frontend and backend.',
-		technologies: [ 'Next.js', 'HTML/CSS', 'Laravel' ],
-		linkGithub: null,
-		linkWebsite: 'https://flks.nl/',
-		img: '/images/projects/flks_website.jpg',
-		directionContent: CLASS_RIGHT_CONTENT
 	}
 ];
 
@@ -51,7 +62,7 @@ const displayProjectsDOM = () => {
 			const element = projects[property];
 
 			const columnImg = `
-                <div class="col" data-aos="zoom-in-right" data-aos-duration="1000">
+                <div class="col-lg-6" data-aos="zoom-in-right" data-aos-duration="1000">
                     <a href="${element.linkWebsite}" target="_blank"
                     rel="noreferrer"><img loading="lazy" src="${element.img}" alt="${element.title}" class="project-img"></a>
                 </div>

@@ -2,9 +2,10 @@
     margin-top: 100px;
 
     &-img {
-        max-height: 350px;
+        max-height: 300px;
         -webkit-filter: brightness(100%);
-        box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.02);
+        box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.07);
+        border-radius: 20px;
         -webkit-transition: all .5s ease;
         -moz-transition: all .5s ease;
         -o-transition: all .5s ease;
@@ -60,7 +61,7 @@
 }
 
 .right-content {
-    text-align: right;
+    text-align: right !important;
     z-index: 99999;
     margin-left: -100px;
 
