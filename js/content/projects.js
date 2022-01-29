@@ -22,7 +22,7 @@ const projects = [
 		id: generateId(),
 		title: 'FLKS.nl',
 		description:
-			'Website for health insurance company called FLKS. I built the website for while working at Het Codeerbedrijf.',
+			'Website for health insurance company called FLKS. I built the website while working at Het Codeerbedrijf as a web developer.',
 		technologies: [ 'Next.js', 'HTML/CSS' ],
 		linkGithub: null,
 		linkWebsite: 'https://flks.nl/',
@@ -33,7 +33,7 @@ const projects = [
 		id: generateId(),
 		title: 'Opzeggenbij.nl',
 		description:
-			'Website where people can generate letters for canceling subscriptions for certain companies. I built the website for while working at Het Codeerbedrijf.',
+			'Website where people can generate letters for canceling subscriptions for certain companies. I built the website while working at Het Codeerbedrijf as a web developer.',
 		technologies: [ 'Wordpress', 'PHP', 'Javascript', 'HTML/CSS' ],
 		linkGithub: null,
 		linkWebsite: 'https://opzeggenbij.nl/',

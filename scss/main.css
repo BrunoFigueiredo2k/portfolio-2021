@@ -494,7 +494,6 @@ textarea:focus {
   width: 65px;
   -webkit-box-shadow: 0 0 10px 5px #aa5ef610;
           box-shadow: 0 0 10px 5px #aa5ef610;
-  border: 1px solid #35323E;
 }
 
 .breadcrum {

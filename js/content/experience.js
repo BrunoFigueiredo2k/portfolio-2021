@@ -5,12 +5,12 @@ const experienceData = [
 		id: generateId(),
 		elemId: 'codeerschool-content',
 		company: 'Hét Codeerbedrijf',
-		companyLogoUrl: 'https://irp-cdn.multiscreensite.com/fe569093/dms3rep/multi/logo.png',
+		companyLogoUrl: '/images/codeerbedrijf_logo.jpg',
 		role: 'Developer',
-		date: 'October 2020 - Now',
+		date: 'October 2020 - February 2022',
 		roles: [
-			'Create front-end and functionality of several different projects based on designs provided.',
-			'Creating custom fullstack applications.',
+			'Create front-end and functionality of several different projects based on designs provided (Android & web).',
+			'Creating custom fullstack web applications.',
 			'IT support, bug fixing and creating Wordpress websites.'
 		],
 		tech: [ 'Java', 'React', 'PHP', 'Wordpress', 'HTML/CSS', 'Javascript', 'SQL', 'Next.js' ]
@@ -47,9 +47,9 @@ const experienceData = [
 		id: generateId(),
 		elemId: 'gladwell-content',
 		company: 'Gladwell Academy',
-		companyLogoUrl: 'https://www.gladwellacademy.com/wp-content/uploads/2019/06/Gladwell-Academy.jpg',
+		companyLogoUrl: '/images/gladwellacademy_logo.jpg',
 		role: 'Jr. Webmaster',
-		date: 'February - June 2020',
+		date: 'February - June 2020 (internship)',
 		roles: [
 			'Maintained 5+ Wordpress websites by building new features, adding content and redesigning parts of the website(s).',
 			"Researched what could've been done in order to improve the user experience and conversion rate.",
