@@ -3,6 +3,20 @@ import { generateId } from '../content/projects.js';
 const experienceData = [
 	{
 		id: generateId(),
+		elemId: 'kingbee-content',
+		company: 'Kingbee',
+		companyLogoUrl: '/images/kingbee_logo.jpg',
+		role: 'Junior Developer',
+		date: 'February 2022 - Now (internship)',
+		roles: [
+			'Conduct academic research on how stakeholders their problems can best be solved through an interactive BI dashboard.',
+			'Creating and documenting both the front-end and back-end of the interactive dashboard.',
+			'Working together with the team on the main website Folderz.nl. This means fixing bugs, implementing new features and other maintenance tasks.'
+		],
+		tech: [ 'Vue.js', 'HTML/CSS', 'Symfony', 'MySQL' ]
+	},
+	{
+		id: generateId(),
 		elemId: 'codeerschool-content',
 		company: 'Hét Codeerbedrijf',
 		companyLogoUrl: '/images/codeerbedrijf_logo.jpg',

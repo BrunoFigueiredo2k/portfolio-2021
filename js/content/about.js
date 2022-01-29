@@ -85,10 +85,6 @@ let skillsData = [
 				tooltipText: 'Scrum'
 			},
 			{
-				icon: '<img loading="lazy" src="./images/icons/vscode.png" alt="vscode" class="icon-skill-img"/>',
-				tooltipText: 'VS Code'
-			},
-			{
 				icon: '<i class="fab fa-git-square"></i>',
 				tooltipText: 'Git'
 			}
