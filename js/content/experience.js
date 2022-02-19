@@ -13,7 +13,7 @@ const experienceData = [
 			'Creating and documenting both the front-end and back-end of the interactive dashboard.',
 			'Working together with the team on the main website Folderz.nl. This means fixing bugs, implementing new features and other maintenance tasks.'
 		],
-		tech: [ 'Vue.js', 'HTML/CSS', 'Symfony', 'MySQL' ]
+		tech: [ 'Vue.js', 'HTML/CSS', 'Twig', 'Symfony', 'MySQL' ]
 	},
 	{
 		id: generateId(),
