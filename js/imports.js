@@ -5,47 +5,6 @@ import { displayProjectsDOM, displayProjectsPage } from './content/projects.js';
 import { populateSkills, populateEducation } from './content/about.js';
 import { displayEducationDOM } from './content/experience.js';
 
-//TODO: put this inside head later
-{
-	/* <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css" />   */
-}
-
-/** THINGS TO ADD TO HEAD */
-document.getElementsByTagName('head')[0].innerHTML += `
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GRE6WN1W8Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GRE6WN1W8Y');
-</script>
-`;
-
-// TODO: fix this cookie popup
-// document.body.innerHTML += `
-// <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-//   <script>
-//    window.cookieconsent.initialise({
-//     container: document.getElementById("content"),
-//     palette:{
-//      popup: {background: "#fff"},
-//      button: {background: "#aa0000"},
-//     },
-//     revokable:true,
-//     onStatusChange: function(status) {
-//      console.log(this.hasConsented() ?
-//       'enable cookies' : 'disable cookies');
-//     },
-//     law: {
-//      regionalLaw: false,
-//     },
-//     location: true,
-//    });
-//   </script>
-// `;
-
 const populateDOM = () => {
 	displayProjectsDOM();
 	populateSkills();
