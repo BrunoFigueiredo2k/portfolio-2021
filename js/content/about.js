@@ -23,13 +23,13 @@ let skillsData = [
 			},
 			{
 				icon:
-					'<img loading="lazy" src="../../images/icons/next-js.svg" alt="next.js logo" class="icon-skill-img"/>',
-				tooltipText: 'Next.js'
+					'<i class="fab fa-vuejs"></i>',
+				tooltipText: 'Vue'
 			},
 			{
 				icon:
-					'<img loading="lazy" src="https://img.icons8.com/ios-filled/2x/jquery.png" alt="jquery logo" class="icon-skill-img"/>',
-				tooltipText: 'jQuery'
+					'<img loading="lazy" src="../../images/icons/next-js.svg" alt="next.js logo" class="icon-skill-img"/>',
+				tooltipText: 'Next.js'
 			},
 			{
 				icon:
