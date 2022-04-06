@@ -51,6 +51,10 @@ let skillsData = [
 			{
 				icon: '<img loading="lazy" src="./images/icons/mysql.png" alt="MySQL" class="icon-skill-img"/>',
 				tooltipText: 'MySQL'
+			},
+			{
+				icon: '<i class="fab fa-symfony"></i>',
+				tooltipText: 'Symfony'
 			}
 		]
 	},
