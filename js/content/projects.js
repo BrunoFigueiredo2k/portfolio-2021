@@ -40,17 +40,17 @@ const projects = [
 		img: '/images/projects/opzeggenbij.jpg',
 		directionContent: CLASS_RIGHT_CONTENT
 	},
-	{
-		id: generateId(),
-		title: 'KB Creative',
-		description:
-			"Webdesign & development agency I'm the co-owner of. At KB Creative I'm a front-end developer working closely together with another back-end developer building fullstack web applications",
-		technologies: [ 'Javascript', 'HTML/CSS' ],
-		linkGithub: 'https://github.com/BrunoFigueiredo2k/KB-Creative',
-		linkWebsite: 'https://kbcreative.nl/pages/index.html',
-		img: '/images/projects/project-kbcreative.jpg',
-		directionContent: CLASS_LEFT_CONTENT
-	}
+	// {
+	// 	id: generateId(),
+	// 	title: 'KB Creative',
+	// 	description:
+	// 		"Webdesign & development agency I'm the co-owner of. At KB Creative I'm a front-end developer working closely together with another back-end developer building fullstack web applications",
+	// 	technologies: [ 'Javascript', 'HTML/CSS' ],
+	// 	linkGithub: 'https://github.com/BrunoFigueiredo2k/KB-Creative',
+	// 	linkWebsite: 'https://kbcreative.nl/pages/index.html',
+	// 	img: '/images/projects/project-kbcreative.jpg',
+	// 	directionContent: CLASS_LEFT_CONTENT
+	// }
 ];
 
 const displayProjectsDOM = () => {
