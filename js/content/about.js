@@ -101,7 +101,7 @@ let educationData = [
 		year: '2018 - 2022',
 		school: 'Hogeschool van Amsterdam - Business IT & Management',
 		description:
-			"At the HvA I'm currently in my third year of my bachelors for the study Business IT & Management. Although this study focusses more on business processes rather than software development, it was still the reason I developed an interest in (software) development."
+			"I'm currently in the last year of my bachelors for the study Business IT & Management. Although this study focusses more on business processes rather than software development, it was still the reason I developed an interest in (software) development."
 	},
 	{
 		year: '2012 - 2018',
