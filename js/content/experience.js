@@ -31,19 +31,6 @@ const experienceData = [
 	},
 	{
 		id: generateId(),
-		elemId: 'kbcreative-content',
-		company: 'KB Creative',
-		companyLogoUrl: '/images/kbcreative-logo.jpg',
-		role: 'Owner',
-		date: 'October 2020 - Now',
-		roles: [
-			'Take on several different web development projects by creating webshops, SaaS apps and static websites.',
-			'Handle communication with clients and other partners we work together with.'
-		],
-		tech: [ 'HTML', 'SCSS', 'Javascript', 'PHP' ]
-	},
-	{
-		id: generateId(),
 		elemId: 'tsb-content',
 		company: 'The Student Broker',
 		companyLogoUrl: '/images/tsb-logo.png',
